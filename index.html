@@ -1,232 +1,275 @@
 <!DOCTYPE HTML>
 <!--
-
-	Parallelism 1.0 by HTML5 UP
+	Prologue 1.2 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 -->
 <html>
 	<head>
 		<title>Jonathan's Portfolio</title>
-		<meta name="viewport" content="width=1120,user-scalable=no" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script>-->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.poptrox-2.1.js"></script>
-		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
-
-		<script>
-		$(document).ready(function() {
-			$("#myLogo").show(0).delay(2000).fadeOut(800);
-			$("#myLogoSmall").hide(0).delay(2800).fadeIn(500);
-			$(".alternate_header").hide(0);
-		});
-		</script>
-
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
 		</noscript>
-
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-
 	</head>
 	<body>
 
-		<div id="wrapper">
-			<!-- Hidden Scroll Logo -->
+		<!-- Header -->
+			<div id="header" class="skel-panels-fixed">
 
-			<div id="myLogoSmall" alt="Small Logo"></div>
+				<div class="top">
 
-			<!-- End Hidden Scroll Logo -->
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image full"><img src="images/js_logo.png" alt="" /></span>
+						</div>
 
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="skel-panels-ignoreHref"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Welcome</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="http://www.linkedin.com/pub/jonathan-slavuter/10/47a/665/" target="_blank" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
+							<li><a href="https://twitter.com/JSlavuter" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/jonathan.slavuter" target="_blank" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+							<li><a href="#contact" class="fa fa-envelope solo scrolly"><span>Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
 			<div id="main">
 
-			<!-- Logo -->
+				<!-- Intro -->
+					<section id="top" class="one">
+						<div class="container">
 
-			<div id="myLogo" alt="Logo"></div>
+							<header>
+								<h2 class="alt">Welcome To My Portfolio.</h2>
+							</header>
 
-			<!-- End Logo -->
+							<p>Hi. My name is Jonathan. I'm a graphic designer and front end web developer. Feel free to take a look at some of the work I've done as of late. If you want to show some love, please <a href="#contact" class="scrolly" style="text-decoration: none">reach out.</p>
 
-				<div id="reel">
+							<footer>
+								<a href="#portfolio" class="button scrolly">View Portfolio</a>
+							</footer>
 
-				<!-- ******************************************************************************************** -->
-				<!-- ******************************************************************************************** -->
+						</div>
+					</section>
 
-					<!-- Header Item -->
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
 
-						<div id="header" class="item" data-width="545" style="opacity:.75">
+							<header>
+								<h2>Portfolio</h2>
+							</header>
 
-							<div class="main_header">
-								<h1 id="welcome">Welcome to my portfolio</h1>
+							<p>Below, you'll find a collection of Web designs, mobile designs, and various branding samples.
+							   All work was commissioned by freelance or consulting contracts, and is either live material or
+							   concept work. These samples range from redesign work to concept-to-completion scales.
+							</p>
+
+							<!-- Portfolio Index -->
+
+							<div class="row">
+								<div class="4u">
+									<article class="item" style="box-shadow:none">
+										<h3>Web Design</h3>
+									</article>
+
+									<article class="item">
+										<a href="#WD1" class="image full scrolly"><img src="images/WD1.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="#WD2" class="image full scrolly"><img src="images/WD2.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="#WD3" class="image full scrolly"><img src="images/WD3.png" alt="" /></a>
+									</article>
+								</div>
+
+								<div class="4u">
+								    <article class="item" style="box-shadow:none">
+										<h3>Mobile Design</h3>
+									</article>
+
+									<article class="item">
+										<a href="#MD1" class="image full scrolly"><img src="images/MD1.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="#MD2" class="image full scrolly"><img src="images/MD2.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="#MD3" class="image full scrolly"><img src="images/MD3.png" alt="" /></a>
+									</article>
+								</div>
+
+								<div class="4u">
+									 <article class="item" style="box-shadow:none">
+										<h3>Branding & Identity</h3>
+									</article>
+
+									<article class="item">
+										<a href="#BI1" class="image full scrolly"><img src="images/BI1.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="#BI2" class="image full scrolly"><img src="images/BI2.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="#BI3" class="image full scrolly"><img src="images/BI3.png" alt="" /></a>
+									</article>
+								</div>
+
 							</div>
 
-							<div class="alternate_header">
-								<h1 id="about_me">Who am I?</h1>
-								<p id="describe_me">As a graphic designer and front end web developer, I am interested in curating an experience to portray a story that resonates with users. If the response is "Oh damn, that's nice...", then I will have done my job.
-									<br/><br/>My skill-set is listed below:<br/><br/>
-									<ul>
-										<li>HTML, CSS</li>
-										<li>Javascript, jQuery</li>
-										<li>Adobe (CS6): Photoshop, Illustrator, Indesign</li>
-										<li>Project Management: Basecamp, Wireframing, Moodboards, Mockups</li>
-										<li>eCommerce/CMS Platforms: Magento, Drupal, Wordpress, Wix, Goodsie</li>
-									</ul>
-								</p>
+							<!-- Portfolio Items (Detailed) -->
+
+							<div class="row">
+								<div class="12u">
+									<article class="item">
+										<a href="http://www.kristinhanson.us" target="_blank" class="image full" id="WD1"><img src="images/WD1.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="http://www.meandthegirls.com" target="_blank" class="image full" id="WD2"><img src="images/WD2.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a class="image full" id="WD3"><img src="images/WD3.png" alt="" /></a>
+									</article>
+								</div>
+
+								<div class="6u" style="margin-left: 245px">
+									<article class="item">
+										<a href="http://www.hairdoozy.com" target="_blank" class="image full" id="MD1"><img src="images/MD1.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="http://www.jodihansonstudio.com/" target="_blank" class="image full" id="MD2"><img src="images/MD2.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a href="http://howtobearedhead.com/" target="_blank" class="image full" id="MD3"><img src="images/MD3.png" alt="" /></a>
+									</article>
+								</div>
+
+								<div class="9u" style="margin-left: 122px">
+									<article class="item">
+										<a class="image full" id="BI1"><img src="images/BI1.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a class="image full" id="BI2"><img src="images/BI2.png" alt="" /></a>
+									</article>
+									<article class="item">
+										<a class="image full" id="BI3"><img src="images/BI3.png" alt="" /></a>
+									</article>
+								</div>
 							</div>
 
 						</div>
+					</section>
 
-					<!-- Thumb Items -->
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
 
-						<!-- Website Design Album -->
+							<header>
+								<h2>About Me</h2>
+							</header>
 
-						<article class="item thumb" data-width="600">
-							<h2>Website Design</h2>
-							<a href="images/fulls/WD1.png"><img src="images/fulls/WD1.png" alt="WD1"></a>
-						</article>
+							<a class="image featured"><img src="images/js_picture.png" alt="" /></a>
 
-						<article class="item thumb" data-width="0">
-							<h2>Website Design : www.kristinhanson.us</h2>
-							<a href="images/fulls/WD5.png"><img src="images/fulls/WD5.png" alt="WD2"></a>
-						</article>
+							<p>28 Year old Graphic Designer / Web Developer from New York City.
+							   Love for all things artsy-fartsy and music. Also, I should include
+							   some obligatory reference to bacon or the fine art of the doge. Such wow.<br/><br/>
+							   For a list of my skills and experience, take a look at <a href="images/jonathanslavuter_design_resume_04-29-14.pdf" target="_blank" alt="my resume">my resume</a>.</p>
 
-						<article class="item thumb" data-width="0">
-							<h2>Website Design : www.meandthegirls.com</h2>
-							<a href="images/fulls/WD6.png"><img src="images/fulls/WD6.png" alt="WD3"></a>
-						</article>
+						</div>
+					</section>
 
-						<article class="item thumb" data-width="0">
-							<h2>Website Design : Deep Steep (Work In Progress)</h2>
-							<a href="images/fulls/WD7.png"><img src="images/fulls/WD7.png" alt="WD4"></a>
-						</article>
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
 
-						<!-- Mobile Design Album -->
+							<header>
+								<h2>Contact</h2>
+							</header>
 
-						<article class="item thumb" data-width="600">
-							<h2>Mobile Design</h2>
-							<a href="images/fulls/MD1.png"><img src="images/fulls/MD1.png" alt="MD1"></a>
-						</article>
+							<p>If you'd like to contact me about graphic design or development work feel free
+							   to shoot me an <a href="mailto:jslavuter@gmail.com">email</a><!-- below-->. <br/>If you'd like to talk shop about other
+							   happenings, you're going to have to <a href="http://www.yelp.com/search?find_desc=&find_loc=New+York+City&ns=1&ls=41fce9a56c753baa#find_desc=beer+garden&sortby=rating" target="_blank">get me a beer first</a>.
+							</p>
 
-						<article class="item thumb" data-width="0">
-							<h2>Mobile Design : www.hairdoozy.com</h2>
-							<a href="images/fulls/MD5.png"><img src="images/fulls/MD5.png" alt="MD2"></a>
-						</article>
+							<!--form method="post" action="mail.php">
+								<div class="row half">
+									<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<input type="text" class="text" name="subject" placeholder="Subject" />
+									</div>
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<a href="#contact" class="button submit scrolly">Send Message</a>
+									</div>
+								</div>
+							</form-->
 
-						<article class="item thumb" data-width="0">
-							<h2>Mobile Design : www.jodihansonstudio.com</h2>
-							<a href="images/fulls/MD6.png"><img src="images/fulls/MD6.png" alt="MD3"></a>
-						</article>
+						</div>
+					</section>
 
-						<article class="item thumb" data-width="0">
-							<h2>Mobile Design : www.howtobearedhead.com</h2>
-							<a href="images/fulls/MD7.png"><img src="images/fulls/MD7.png" alt="MD4"></a>
-						</article>
-
-						<!-- Branding & Identity Album -->
-
-						<article class="item thumb" data-width="600">
-							<h2>Branding & Identity</h2>
-							<a href="images/fulls/BI1.png"><img src="images/fulls/BI1.png" alt="BI1"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Branding & Identity : First Choice Asset Management</h2>
-							<a href="images/fulls/BI2.png"><img src="images/fulls/BI2.png" alt="BI2"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Branding & Identity : RE5 Group</h2>
-							<a href="images/fulls/BI3.png"><img src="images/fulls/BI3.png" alt="BI3"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Branding & Identity : Go Dry</h2>
-							<a href="images/fulls/BI4.png"><img src="images/fulls/BI4.png" alt="BI4"></a>
-						</article>
-
-						<!-- Black And White Designs Album -->
-
-						<!--article class="item thumb" data-width="600">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW7.png"><img src="images/fulls/BW7.png" alt="BW6"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW1.png"><img src="images/fulls/BW1.png" alt="BW1"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW2.png"><img src="images/fulls/BW2.png" alt="BW2"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW3.png"><img src="images/fulls/BW3.png" alt="BW3"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW4.png"><img src="images/fulls/BW4.png" alt="BW4"></a>
-						</article>
-
-							<article class="item thumb" data-width="0">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW5.png"><img src="images/fulls/BW5.png" alt="BW5"></a>
-						</article>
-
-						<article class="item thumb" data-width="0">
-							<h2>Black And White Designs</h2>
-							<a href="images/fulls/BW6.png"><img src="images/fulls/BW6.png" alt="BW6"></a>
-						</article-->
-				</div>
 			</div>
 
+		<!-- Footer -->
 			<div id="footer">
-				<div class="left">
-					<h3>Hi. My name is Jonathan. I'm a graphic designer and front end developer. <a id="learn_more">Learn more...</a></h3>
-					<p>Feel free to take a look at some of the work I've done as of late.<br/>
-                    If you want to show some love, please <a href="mailto:jslavuter@gmail.com" style="text-decoration: none">reach out.</a></p>
-				</div>
 
-				<script>
-					$("#learn_more").click(function() {
-						$("#main").animate({ scrollLeft: 0 }, 500);
-						$(".main_header").fadeOut(1000).hide(0);
-						$(".alternate_header").delay(1000).fadeIn(1000).show(0);
-						$(".alternate_header").delay(28000).fadeOut(1000).hide(0);
-						$(".main_header").delay(30000).fadeIn(1000).show(0);
-					});
-				</script>
-
-				<div class="right">
-					<ul class="contact">
-						<li><a href="images/jonathanslavuter_design_resume_04-21-14.pdf" target="_blank" class="icon" alt="resume"><img src="css/images/resume.png" alt="behance" width="27" height="24"/></a></li>
-					    <li><a href="https://be.net/ultimatessjoten6deb" target="_blank" class="icon"><img src="css/images/behance.png" alt="behance" width="37" height="24"/></a></li>
-					    <li><a href="http://cargocollective.com/jonathanslavuter" target="_blank" class="icon"><img src="css/images/cargo.png" alt="behance" width="30" height="24"/></a></li>
-					    <li><a href="http://www.linkedin.com/pub/jonathan-slavuter/10/47a/665/" target="_blank" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
-                        <li><a href="https://www.facebook.com/jonathan.slavuter" target="_blank" class="icon icon-facebook"><span>Facebook</span></a></li>
-						<li><a href="https://twitter.com/JSlavuter" target="_blank" class="icon icon-twitter"><span>Twitter</span></a></li>
-						<li><a href="mailto:jslavuter@gmail.com" class="icon icon-envelope-alt"><span>Email</span></a></li>
-					</ul>
-
-                    <div id="copyright">
-						Designed by Jonathan Slavuter
+				<!-- Copyright -->
+					<div class="copyright">
+						<p>&copy; 2014 Jonathan Slavuter. All rights reserved.</p>
 					</div>
 
-				</div>
 			</div>
-
-		</div>
 
 	</body>
 </html>
