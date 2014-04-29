@@ -31,7 +31,7 @@
 		min-height: 10em;
 		overflow: hidden;
 	}
-	
+
 		.image.featured img
 		{
 			position: relative;
@@ -41,7 +41,7 @@
 				Stuff below is automatically calculated using JS. It sucks, but there
 				doesn't appear to be a way to center the <img> inside its parent with
 				pure CSS (since we don't know its width).
-			
+
 				left: 0;
 				margin-left: 0;
 			*/
@@ -54,8 +54,21 @@
 	#main
 	{
 	}
-	
+
 		#main > section
 		{
 			padding: 2em 0 2em 0;
+		}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#main
+	{
+	}
+
+		#portfolio > #not_mobile
+		{
+			display: none;
 		}
