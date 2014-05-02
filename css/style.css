@@ -1090,6 +1090,18 @@
 				margin: 0;
 			}
 
+	@-webkit-keyframes greenPulse {
+		from { color: inherit}
+		50% { color: #00E69C}
+		to { color: inherit}
+	}
+
+	a.green_email {
+		-webkit-animation-name: greenPulse;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-iteration-count: infinite;
+	}
+
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
