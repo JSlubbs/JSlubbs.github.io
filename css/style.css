@@ -171,7 +171,8 @@
 			margin-bottom: 0;
 		}
 
-		.row {
+		.row
+		{
 			margin-bottom: 40px;
 		}
 
@@ -232,6 +233,25 @@
 					margin: 0 auto;
 					width: auto;
 				}
+
+		.zoom
+		{
+			-webkit-transition: all .2s ease-in-out;
+		  	-moz-transition: all .2s ease-in-out;
+		  	-o-transition: all .2s ease-in-out;
+		  	-ms-transition: all .2s ease-in-out;
+		  	transition: all .2s ease-in-out;
+		}
+
+		.zoom:hover
+		{
+			cursor: pointer;
+		    transform:scale(1.05);
+		    -ms-transform:scale(1.05); /* IE 9 */
+		    -moz-transform:scale(1.05); /* Firefox */
+		    -webkit-transform:scale(1.05); /* Safari and Chrome */
+		    -o-transform:scale(1.05); /* Opera */
+		}
 
 	/* Lists */
 
