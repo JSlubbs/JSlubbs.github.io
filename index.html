@@ -68,7 +68,6 @@
 						<ul class="icons">
 							<li><a href="http://www.linkedin.com/pub/jonathan-slavuter/10/47a/665/" target="_blank" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
 							<li><a href="https://twitter.com/JSlavuter" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/jonathan.slavuter" target="_blank" class="fa fa-facebook solo"><span>Facebook</span></a></li>
 							<li><a href="#contact" class="fa fa-envelope solo scrolly"><span>Email</span></a></li>
 						</ul>
 
@@ -308,6 +307,10 @@
 							   happenings, you're going to have to <a href="http://www.yelp.com/search?find_desc=&find_loc=New+York+City&ns=1&ls=41fce9a56c753baa#find_desc=beer+garden&sortby=rating" target="_blank">get me a beer first</a>.
 							</p>
 
+							<!------------------------------------------------>
+							<!-- STANDARD FORM -->
+							<!------------------------------------------------>
+
 							<!--form method="post" action="mail.php">
 								<div class="row half">
 									<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
@@ -328,9 +331,43 @@
 								</div>
 							</form-->
 
+							<!------------------------------------------------>
+							<!-- CUSTOM SECURE / VALIDATED FORM -->
+							<!------------------------------------------------>
+
+
+							<!--form role="form" id="feedbackForm">
+				              <div class="form-group has-feedback row half">
+				                <div class="6u"><input type="text" class="text" name="name" placeholder="Name"></div>
+				                <div class="6u"><span class="glyphicon glyphicon-asterisk form-control-feedback"></span></div>
+				                <div class="6u"><span class="help-block" style="display: none;">Please enter your name.</span></div>
+
+				                <div class="6u"><input type="email" class="text" name="email" placeholder="Email"></div>
+				                <div class="6u"><span class="glyphicon glyphicon-asterisk form-control-feedback"></span></div>
+				                <div class="6u"><span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+				              </div>
+
+				              <div class="form-group has-feedback row half">
+				                <div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
+				                <div class="12u"><span class="help-block" style="display: none;">Please enter a message.</span></div>
+				              </div>
+
+				              <div class="row half">
+				                <div class="12u"><img id="captcha" src="library/vender/securimage/securimage_show.php" alt="CAPTCHA Image" /></div>
+				                <div class="12u"><a href="#" onclick="document.getElementById('captcha').src = 'library/vender/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Show a Different Image</a></div></div>
+
+				              <div class="row half">
+				                <div class="4u"></div>
+				                <div class="4u"><input type="text" class="text" name="captcha_code" id="captcha_code" placeholder="Enter Captcha." /></div>
+				                <div class="12u"><span class="glyphicon glyphicon-asterisk form-control-feedback"></span></div>
+				                <div class="12u"><span class="help-block" style="display: none;">Please enter the code displayed within the image.</span></div>
+				                <div class="12u"><a type="submit" id="feedbackSubmit" class="button submit">Send Feedback</a></div>
+				              </div>
+
+							</form-->
+
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->
