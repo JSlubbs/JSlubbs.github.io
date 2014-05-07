@@ -996,6 +996,54 @@
 		.fa-turkish-lira:before,.fa-try:before{content:"\f195"}
 
 /*********************************************************************************/
+/* Special Icons                                                                 */
+/*********************************************************************************/
+
+		.behance:before
+		{
+			display: inline-block;
+		    width: 1.3em;
+		    height: 1.3em;
+		    margin: 0 0 -.58em 0;
+		    content: "";
+		    background: url("images/behance.png") no-repeat 0 0;
+		    background-size: 100%;
+		    opacity: 0.20;
+			-moz-transition: opacity 0.25s ease-in-out;
+			-webkit-transition: opacity 0.25s ease-in-out;
+			-o-transition: opacity 0.25s ease-in-out;
+			-ms-transition: opacity 0.25s ease-in-out;
+			transition: opacity 0.25s ease-in-out;
+		}
+
+		.behance:hover::before
+		{
+			opacity: 1.0;
+		}
+
+		.cargo:before
+		{
+			display: inline-block;
+		    width: .95em;
+		    height: .95em;
+		    margin:  0 0 -.14em 0;
+		    content: "";
+		    background: url("images/cargo.png") no-repeat 0 0;
+		    background-size: 100%;
+		    opacity: 0.20;
+			-moz-transition: opacity 0.25s ease-in-out;
+			-webkit-transition: opacity 0.25s ease-in-out;
+			-o-transition: opacity 0.25s ease-in-out;
+			-ms-transition: opacity 0.25s ease-in-out;
+			transition: opacity 0.25s ease-in-out;
+		}
+
+		.cargo:hover::before
+		{
+			opacity: 1.0;
+		}
+
+/*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
