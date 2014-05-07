@@ -47,7 +47,7 @@
 
 		h2
 		{
-			font-size: 2em;
+			font-size: 2.5em;
 			letter-spacing: -1px;
 		}
 
@@ -63,12 +63,12 @@
 
 		h3
 		{
-			font-size: 1.5em;
+			font-size: 1.7em;
 		}
 
 	header
 	{
-		margin: 6em 0 2em 0;
+		margin: 3em 0 2em 0;
 	}
 
 	footer
@@ -102,7 +102,7 @@
 
 		a:hover
 		{
-			color: #00E69C;
+			color: #1bbb89;
 			border-bottom-color: rgba(255,255,255,0);
 		}
 
@@ -123,7 +123,7 @@
 	hr
 	{
 		border: 0;
-		border-top: solid 1px #ddd;
+		border-top: 1px solid #fff;
 	}
 
 	blockquote
@@ -258,6 +258,7 @@
 			position: relative;
 			display: inline-block;
 			z-index: 0;
+			margin-bottom: -11px;
 		}
 
 		.overlay
@@ -552,6 +553,11 @@
 		{
 			box-shadow: 0 0.05em 0.15em 0 rgba(0,0,0,0.05);
 			margin-bottom: 40px;
+		}
+
+		.item_alt
+		{
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 		}
 
 			.item header
@@ -1200,7 +1206,7 @@
 	{
 		margin-left: 375px;
 		text-align: center;
-		background-color: #1a1e20;
+		background-color: #DEE3E7;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
 		font-size: 0.8em;
@@ -1213,7 +1219,7 @@
 
 			#footer .copyright p
 			{
-				margin: .75em 0 0 0;
+				margin: 1em 0 0 0;
 			}
 
 			#footer .copyright .menu
@@ -1223,7 +1229,7 @@
 
 	@-webkit-keyframes greenPulse {
 		from { color: inherit}
-		50% { color: #00E69C}
+		50% { color: #1bbb89}
 		to { color: inherit}
 	}
 
@@ -1254,7 +1260,7 @@
 
 		#main > section.one
 		{
-			background: #1a1e20;
+			background: #ECF1F5;
 			padding-top: 0;
 		}
 
@@ -1265,15 +1271,10 @@
 
 		#main > section.two
 		{
-			background-color: #2a3134;
-		}
-
-		#main > section.three
-		{
-			background-color: #1a1e20;
+			background-color: #DEE3E7;
 		}
 
 		#main > section.four
 		{
-			background-color: #2a3134;
+			background-color: #ECF1F5;
 		}
