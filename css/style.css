@@ -1260,7 +1260,8 @@
 
 		#main > section.one
 		{
-			background: #ECF1F5;
+			background-image: url(../images/bg_texture_2.png);
+			background-repeat: repeat;
 			padding-top: 0;
 		}
 
@@ -1271,10 +1272,12 @@
 
 		#main > section.two
 		{
-			background-color: #DEE3E7;
+			background-image: url(../images/bg_texture_1.png);
+			background-repeat: repeat;
 		}
 
 		#main > section.four
 		{
-			background-color: #ECF1F5;
+			background-image: url(../images/bg_texture_2.png);
+			background-repeat: repeat;
 		}
