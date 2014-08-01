@@ -1025,6 +1025,7 @@
 		.behance:hover::before
 		{
 			opacity: 1.0;
+			color: #1bbb89;
 		}
 
 		.cargo:before
@@ -1235,7 +1236,19 @@
 
 	a.green_email {
 		-webkit-animation-name: greenPulse;
-		-webkit-animation-duration: 3s;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	@-webkit-keyframes greenPulse2 {
+		from { color: #41484c}
+		50% { color: #1bbb89}
+		to { color: #41484c}
+	}
+
+	.fa-briefcase::before {
+		-webkit-animation-name: greenPulse2;
+		-webkit-animation-duration: 2s;
 		-webkit-animation-iteration-count: infinite;
 	}
 
