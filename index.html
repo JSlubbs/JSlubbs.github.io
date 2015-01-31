@@ -84,7 +84,9 @@
 							end web developer based in New York City. I come from an interdisciplinary
 							background and have love for all things artistic and musical.</p>
 							<p>Feel free to take a look at some of the work I've done as of late.</p>
-							<br/><br/><br/>
+							<br/>
+							<div class="downArrow bounce"></div>
+							<br/>
 						</div>
 					</section>
 
@@ -318,7 +320,7 @@
 							<!------------------------------------------------>
 
 
-							<!--form role="form" id="feedbackForm">
+							<form role="form" id="feedbackForm" method="POST" action="index.html">
 				              <div class="form-group has-feedback row half">
 				                <div class="6u"><input type="text" class="text" name="name" placeholder="Name"></div>
 				                <div class="6u"><span class="glyphicon glyphicon-asterisk form-control-feedback"></span></div>
@@ -335,18 +337,10 @@
 				              </div>
 
 				              <div class="row half">
-				                <div class="12u"><img id="captcha" src="library/vender/securimage/securimage_show.php" alt="CAPTCHA Image" /></div>
-				                <div class="12u"><a href="#" onclick="document.getElementById('captcha').src = 'library/vender/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Show a Different Image</a></div></div>
-
-				              <div class="row half">
-				                <div class="4u"></div>
-				                <div class="4u"><input type="text" class="text" name="captcha_code" id="captcha_code" placeholder="Enter Captcha." /></div>
-				                <div class="12u"><span class="glyphicon glyphicon-asterisk form-control-feedback"></span></div>
-				                <div class="12u"><span class="help-block" style="display: none;">Please enter the code displayed within the image.</span></div>
-				                <div class="12u"><a type="submit" id="feedbackSubmit" class="button submit">Send Feedback</a></div>
+				                <div class="12u"><a type="submit" id="feedbackSubmit" class="button submit">Send Message</a></div>
 				              </div>
 
-							</form-->
+							</form>
 
 						</div>
 					</section>
