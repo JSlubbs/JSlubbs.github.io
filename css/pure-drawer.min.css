@@ -43,6 +43,19 @@
     transition: 250ms;
     color: #1bbb89;
 }
+
+.portCenter a .fa-link {
+    cursor: pointer;
+    text-align: right;
+    margin: 0 21px;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 75px;
+    opacity: 1;
+    z-index: 999;
+}
     
     /* Spec for jQuery selector */
     #portContainer .inactiveImage {
