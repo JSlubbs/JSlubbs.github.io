@@ -1,0 +1,182 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 100%;
+  color: #fff;
+  background: #222729 url("images/overlay.png");
+  box-shadow: inset -0.5em 0 1.6em -10px rgba(0, 0, 0, 0.5);
+  text-align: right; }
+  #header .top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; }
+  #header .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+  #header .icons {
+    font-size: 0.8em;
+    margin: 0 0 1em 0;
+    text-align: center; }
+    #header .icons a {
+      color: #41484c;
+      -moz-transition: color 0.35s ease-in-out;
+      -webkit-transition: color 0.35s ease-in-out;
+      -o-transition: color 0.35s ease-in-out;
+      -ms-transition: color 0.35s ease-in-out;
+      transition: color 0.35s ease-in-out; }
+      #header .icons a:hover {
+        color: #fff; }
+
+#logo {
+  position: relative;
+  margin: 1.75em 1.5em 3em 1.5em;
+  min-height: 172px;
+  cursor: default; }
+  #logo h1 {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1em; }
+  #logo .byline {
+    position: relative;
+    display: block;
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.25em;
+    margin: 0.5em 0 0 0; }
+  #logo .image {
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+#nav ul li a {
+  display: block;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none; }
+  #nav ul li a span {
+    position: relative;
+    display: block;
+    font-size: 0.8em; }
+    #nav ul li a span:before {
+      position: absolute;
+      left: 0;
+      color: #41484c;
+      text-align: center;
+      width: 1.25em;
+      line-height: 1.75em; }
+  #nav ul li a.active {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    color: #fff; }
+    #nav ul li a.active span:before {
+      color: #1bbb89; }
+
+.portCenter section {
+  max-width: 1000px;
+  margin: auto; }
+
+.portCenter section .ux-method-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px; }
+
+.portCenter .ux-sample {
+  height: 1000px; }
+
+.pure-toggle-label i {
+  -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; }
+
+#footer {
+  margin-left: 375px;
+  text-align: center;
+  background-color: #1bbb89;
+  padding: 1em 0 2em 0;
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+  font-size: 0.8em; }
+  #footer .copyright {
+    line-height: 1.25em; }
+    #footer .copyright p {
+      margin: 1em 0 0 0;
+      color: white;
+      font-weight: 400;
+      letter-spacing: .05rem; }
+    #footer .copyright .menu {
+      margin: 0; }
+
+@-webkit-keyframes greenPulse2 {
+  from {
+    color: #41484c; }
+  50% {
+    color: #1bbb89; }
+  to {
+    color: #41484c; } }
+.fa-briefcase::before {
+  animation-name: greenPulse2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: greenPulse2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: greenPulse2;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: greenPulse2;
+  -o-animation-duration: 2s;
+  -o-animation-iteration-count: infinite; }
+
+#main {
+  margin-left: 375px; }
+  #main section {
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 4em 0;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    text-align: center; }
+  #main #welcomeSection {
+    padding: 0 40px 40px 40px;
+    background-color: #2a3134;
+    background: linear-gradient(#2a3134, #171B1E); }
+    #main #welcomeSection .container {
+      margin: 8em 0 3em; }
+  #main #motiveBanner {
+    background-color: #1bbb89;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 4rem;
+    text-align: center;
+    padding: 3rem 3rem; }
+    #main #motiveBanner i:last-child {
+      font-size: .75em; }
+  #main #portfolioSection {
+    padding: 0;
+    background-color: #eee; }
+    #main #portfolioSection p {
+      padding: 0 40px; }
+  #main #contactSection {
+    padding: 0 0 4em 0;
+    background-color: #2a3134;
+    background: linear-gradient(#2a3134, #171B1E); }
+    #main #contactSection p {
+      padding: 0 40px; }
+
+/*# sourceMappingURL=main.css.map */

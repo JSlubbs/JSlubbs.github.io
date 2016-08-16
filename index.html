@@ -1,25 +1,20 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue 1.2 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Jonathan Slavuter's Graphic &amp; Web Design Portfolio</title>
+		<title>Jonathan Slavuter's UX Design Portfolio</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="A compilation of web, mobile, and branding design by Jonathan Slavuter." />
-		<meta name="keywords" content="Graphic Design Web Mobile Branding Brand Development Portfolio Jonathan Slavuter Contact" />
+		<meta name="description" content="A compilation of User Experience Design & Information Architecture samples by Jonathan Slavuter." />
+		<meta name="keywords" content="UX Design Web Mobile Wireframe Prototype Sitemap Mockup Portfolio Jonathan Slavuter Contact" />
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-wide.css" />
+		<link rel="stylesheet" href="css/pure-drawer.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/ie9.css" />
+		<link rel="stylesheet" href="css/ie8.css" />
 	</head>
 	<body>
 
@@ -28,233 +23,222 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.
+	src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-T6G3BR');</script>
 	<!-- End Google Tag Manager -->
 
-		<!-- Header -->
-			<div id="header" class="skel-panels-fixed">
+	<!-- Header -->
+	<div id="header" class="skel-panels-fixed">
 
-				<div class="top">
+		<div class="top">
+			<!-- Logo -->
+			<div id="logo">
+				<a href="http://jonathanslavuter.com"><span class="image full"><img src="images/js_logo.svg" alt="Logo" /></span></a>
+			</div>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#welcomeSection" id="welcomeSection-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Welcome</span></a></li>
+					<li><a href="#portfolioSection" id="portfolioSection-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
+					<li><a href="#contactSection" id="contactSection-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
+					<li><a href="images/jonathanslavuter---ux-resume---16-8-9.pdf" target="_blank" class="skel-panels-ignoreHref"/><span class="fa fa-briefcase">Resume</span></a></li>
+				</ul>
+			</nav>
+		</div>
 
-					<!-- Logo -->
-						<div id="logo">
-							<a href="http://jonathanslavuter.com"><span class="image full"><img src="images/js_logo.svg" alt="Logo" /></span></a>
-						</div>
+		<div class="bottom">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Welcome</span></a></li>
-								<li><a href="#index" id="index-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
-								<li><a href="images/jonathanslavuter---ux-resume---16-8-9.pdf" target="_blank" class="skel-panels-ignoreHref"/><span class="fa fa-briefcase">Resume</span></a></li>
-							</ul>
-						</nav>
+			<!-- Social Icons -->
+				<ul class="icons">
+					<li><a href="http://www.be.net/ultimatessjoten6deb/" target="_blank" class="fa behance solo"><span>Behance</span></a></li>
+					<li><a href="http://www.cargocollective.com/jonathanslavuter" target="_blank" class="fa cargo solo"><span>Cargo Collective</span></a></li>
+					<li><a href="http://www.linkedin.com/pub/jonathan-slavuter/10/47a/665/" target="_blank" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
+					<li><a href="https://twitter.com/JSlavuter" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+				</ul>
 
+		</div>
+
+	</div>
+
+		<!-- Portfolio -->
+	<div class="pure-container" data-effect="pure-effect-slide">
+		<input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
+		<div class="pure-drawer" data-position="right">
+			<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+				<p><i class="fa fa-times"></i></p>
+			</label>
+			<div id="portContainer">
+				<div class="portCenter">
+					<a href="http://www.kristinhanson.us" target="_blank"><p><i class="fa fa-link"></i></p></a>
+					<section>
+						<div class="ux-method-container">Research&nbsp;&nbsp;|&nbsp;&nbsp;Wireframe&nbsp;&nbsp;|
+							&nbsp;&nbsp;Prototype&nbsp;&nbsp;|&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;|
+							&nbsp;&nbsp;Visual Design</div>
+					</section>
+					<section><img id='wd1' src="images/project/wd1.png"></section>
+					<section class="ux-sample">
+						<div class="ux-method-container">Research&nbsp;&nbsp;|&nbsp;&nbsp;Wireframe&nbsp;&nbsp;|
+							&nbsp;&nbsp;Prototype&nbsp;&nbsp;|&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;|
+							&nbsp;&nbsp;Visual Design</div>
+					</section>
+					<section>
+						<div class="ux-method-container">Research&nbsp;&nbsp;|&nbsp;&nbsp;Wireframe&nbsp;&nbsp;|
+							&nbsp;&nbsp;Prototype&nbsp;&nbsp;|&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;|
+							&nbsp;&nbsp;Visual Design</div>
+					</section>
 				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="http://www.be.net/ultimatessjoten6deb/" target="_blank" class="fa behance solo"><span>Behance</span></a></li>
-							<li><a href="http://www.cargocollective.com/jonathanslavuter" target="_blank" class="fa cargo solo"><span>Cargo Collective</span></a></li>
-							<li><a href="http://www.linkedin.com/pub/jonathan-slavuter/10/47a/665/" target="_blank" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
-							<li><a href="https://twitter.com/JSlavuter" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-						</ul>
-
+				<div class="portCenter"><img id='wd2' src="images/project/wd2.png"></div>
+				<div class="portCenter">
+					<a href="http://www.meandthegirls.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
+					<img id='wd3' src="images/project/wd3.png">
 				</div>
-
+				<div class="portCenter">
+					<a href="http://www.hairdoozy.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
+					<img id='md1' src="images/project/md1.png">
+				</div>
+				<div class="portCenter">
+					<a href="http://www.howtobearedhead.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
+					<img id='md2' src="images/project/md2.png">
+				</div>
+				<div class="portCenter">
+					<a href="http://www.jodihansonstudio.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
+					<img id='md3' src="images/project/md3.png">
+				</div>
+				<div class="portCenter"><img id='bi1' src="images/project/bi1.png"></div>
+				<div class="portCenter"><img id='bi2' src="images/project/bi2.png"></div>
+				<div class="portCenter"><img id='bi3' src="images/project/bi3.png"></div>
 			</div>
+		</div>
+		<label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+	</div>
 
-			<!-- Portfolio -->
-			<div class="pure-container" data-effect="pure-effect-slide">
-			    <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
-			    <div class="pure-drawer" data-position="right">
-			    	<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-			    		<p><i class="fa fa-arrow-right"></i></p>
-		    		</label>
-		    		<div id="portContainer">
-		    			<div class="portCenter">
-		    				<a href="http://www.kristinhanson.us" target="_blank"><p><i class="fa fa-link"></i></p></a>
-		    				<img id='wd1' src="images/project/wd1.png">
-	    				</div>
-	    				<div class="portCenter"><img id='wd2' src="images/project/wd2.png"></div>
-	    				<div class="portCenter">
-	    					<a href="http://www.meandthegirls.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
-	    					<img id='wd3' src="images/project/wd3.png">
-    					</div>
-	    				<div class="portCenter">
-	    					<a href="http://www.hairdoozy.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
-	    					<img id='md1' src="images/project/md1.png">
-    					</div>
-	    				<div class="portCenter">
-	    					<a href="http://www.howtobearedhead.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
-	    					<img id='md2' src="images/project/md2.png">
-    					</div>
-	    				<div class="portCenter">
-	    					<a href="http://www.jodihansonstudio.com" target="_blank"><p><i class="fa fa-link"></i></p></a>
-	    					<img id='md3' src="images/project/md3.png">
-    					</div>
-	    				<div class="portCenter"><img id='bi1' src="images/project/bi1.png"></div>
-	    				<div class="portCenter"><img id='bi2' src="images/project/bi2.png"></div>
-	    				<div class="portCenter"><img id='bi3' src="images/project/bi3.png"></div>
-	    			</div>
-		    	</div>
-			    <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Intro -->
+		<section id="welcomeSection">
+			<div class="container">
+				<header><h2 class="alt">Oh, hello there.</h2></header>
+				<p>My name is Jonathan. I'm a UX Designer based out of
+				Boston, MA. I specialize in data-heavy applications and
+				architect beautiful solutions to complex systems. I have
+				an interdisciplinary background in tech, art &amp; psychology.</p>
+				<p>Please take a look at some of my work.</p>
+				<a href="#motiveBanner" class="scrolly"><div class="downArrow jiggle"></div></a>
 			</div>
+		</section>
 
-		<!-- Main -->
-			<div id="main">
+		<!-- Quote Break -->
+		<div id='motiveBanner'>
+			<i>A good designer may not have all the answers, but knows which questions to ask.</i><br/>
+			<i>- Rudy Duke</i>
+		</div>
 
-				<!-- Intro -->
-					<section id="top" class="one">
-						<div class="container">
-							<header><h2 class="alt">Oh, hello there.</h2></header>
-							<p>My name is Jonathan. I'm a UX Designer based out of 
-							Boston, MA. I specialize in data-heavy applications and
-							architect beautiful solutions to complex systems. I have 
-							an interdisciplinary background in tech, art &amp; psychology.</p>
-							<p>Please take a look at some of my work.</p>
-							<a href="#motiveBanner" class="scrolly"><div class="downArrow jiggle"></div></a>
-						</div>
-					</section>
+		<!-- Portfolio -->
+		<section id="portfolioSection">
+			<div class="container">
 
-				<!-- Quote Break -->
+				<!-- Index -->
 
-					<div id='motiveBanner'>
-						<i>A good designer may not have all the answers, but knows which questions to ask.</i><br/>
-						<i style='font-size: .75em;'>- Rudy Duke</i>
+				<div class="row">
+					<div class="4u">
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class="zoom" src="images/thumbs/WD1a.svg" alt="Web Design Project 1">
+								</label>
+							</a>
+						</article>
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/WD2a.svg" alt="Web Design Project 2">
+								</label>
+							</a>
+						</article>
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/WD3a.svg" alt="Web Design Project 3">
+								</label>
+							</a>
+						</article>
 					</div>
-
-				<!-- Portfolio -->
-
-					<section id="index" class="two">
-						<div class="container">
-
-							<!-- Index -->
-
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class="zoom" src="images/thumbs/WD1a.svg" alt="Web Design Project 1">
-											</label>
-										</a>
-									</article>
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/WD2a.svg" alt="Web Design Project 2">
-											</label>
-										</a>
-									</article>
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/WD3a.svg" alt="Web Design Project 3">
-											</label>
-										</a>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/MD1a.svg" alt="Mobile Design Project 1">
-											</label>
-										</a>
-									</article>
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/MD2a.svg" alt="Mobile Design Project 2">
-											</label>
-										</a>
-									</article>
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/MD3a.svg" alt="Mobile Design Project 3">
-											</label>
-										</a>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/BI1a.svg" alt="Branding Design Project 1">
-											</label>
-										</a>
-									</article>
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/BI2a.svg" alt="Branding Design Project 2">
-											</label>
-										</a>
-									</article>
-									<article class="item">
-										<a class="image full scrolly">
-											<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-												<img class ="zoom" src="images/thumbs/BI3a.svg" alt="Branding Design Project 3">
-											</label>
-										</a>
-									</article>
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-							<header><h2 class="alt">Contact</h2></header>
-							<p>If you'd like to contact me about graphic design or development work,<br>feel free
-							   to shoot me an email at: <a class="green_email" href="mailto:jslavuter@gmail.com">jslavuter@gmail.com</a>
-						</div>
-					</section>
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<div class="copyright">
-						<p>&copy; 2016 Jonathan Slavuter. All rights reserved.</p>
+					<div class="4u">
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/MD1a.svg" alt="Mobile Design Project 1">
+								</label>
+							</a>
+						</article>
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/MD2a.svg" alt="Mobile Design Project 2">
+								</label>
+							</a>
+						</article>
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/MD3a.svg" alt="Mobile Design Project 3">
+								</label>
+							</a>
+						</article>
 					</div>
-
+					<div class="4u">
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/BI1a.svg" alt="Branding Design Project 1">
+								</label>
+							</a>
+						</article>
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/BI2a.svg" alt="Branding Design Project 2">
+								</label>
+							</a>
+						</article>
+						<article class="item">
+							<a class="image full scrolly">
+								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+									<img class ="zoom" src="images/thumbs/BI3a.svg" alt="Branding Design Project 3">
+								</label>
+							</a>
+						</article>
+					</div>
+				</div>
 			</div>
+		</section>
 
+		<!-- Contact -->
+		<section id="contactSection">
+			<div class="container">
+				<header><h2 class="alt">Contact</h2></header>
+				<p>If you'd like to contact me about graphic design or development work,<br>feel free
+				   to shoot me an email at: <a class="green_email" href="mailto:jslavuter@gmail.com">jslavuter@gmail.com</a></p>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+
+		<!-- Copyright -->
+		<div class="copyright">
+			<p>&copy; 2016 Jonathan Slavuter. All rights reserved.</p>
+		</div>
+	</div>
 	</body>
-	<link rel="stylesheet" href="css/pure-drawer.min.css" />
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/skel-panels.min.js"></script>
 	<script src="js/init.js"></script>
-	<script>
-	$( document ).ready(function() {
-		$( ".item" ).click(function() {
-			$('body').css({"position": "fixed", "overflow": "hidden"});
-
-		// Changing clicked index file to visible in drawer
-			var index = $( ".item" ).index( this );
-			$( "#portContainer" ).children().addClass( "inactiveImage");
-			$( ".inactiveImage" ).eq( index ).removeClass( "inactiveImage");
-		});
-
-		// Scroll back to index upon pure-drawer close
-		$(".pure-toggle-label").click(function (){
-			$('body').css({"position": "relative", "overflow": "auto"});
-            $('html, body').animate({
-                scrollTop: $(index).offset().top
-            }, 500);
-        });
-	});
-	</script>	
-
+	<script src="js/main.js"></script>
+	<script src="js/html5shiv.js"></script>
 </html>
