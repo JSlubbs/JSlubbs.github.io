@@ -85,6 +85,9 @@
     #nav ul li a.active span:before {
       color: #1bbb89; }
 
+#skel-panels-pageWrapper {
+  z-index: 1; }
+
 .portCenter section {
   max-width: 900px;
   margin: auto; }
