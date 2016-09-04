@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd523851-7dfc-4681-9fdd-a45149a23947" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thumbs/WD1a.svg" afterPath="$PROJECT_DIR$/images/thumbs/WD1a.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_portfolio.scss" afterPath="$PROJECT_DIR$/css/_portfolio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thumbs/crunched-thumb.svg" afterPath="$PROJECT_DIR$/images/thumbs/crunched-thumb.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/crunched/primary-logo.svg" afterPath="$PROJECT_DIR$/images/crunched/primary-logo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JSlubbs.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/_portfolio.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.48" vertical-offset="31" max-vertical-offset="1455">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.46735904" vertical-offset="495" max-vertical-offset="1650">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -60,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44362018" vertical-offset="2161" max-vertical-offset="3975">
-              <caret line="164" column="115" selection-start-line="164" selection-start-column="115" selection-end-line="164" selection-end-column="115" />
+            <state vertical-scroll-proportion="-6.58" vertical-offset="1066" max-vertical-offset="4155">
+              <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -379,21 +381,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/_portfolio.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.48" vertical-offset="31" max-vertical-offset="1455">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44362018" vertical-offset="2161" max-vertical-offset="3975">
-          <caret line="164" column="115" selection-start-line="164" selection-start-column="115" selection-end-line="164" selection-end-column="115" />
+        <state vertical-scroll-proportion="-6.58" vertical-offset="1066" max-vertical-offset="4155">
+          <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/_portfolio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46735904" vertical-offset="495" max-vertical-offset="1650">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

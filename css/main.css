@@ -89,7 +89,6 @@
   z-index: 1; }
 
 .portCenter section {
-  max-width: 900px;
   margin: auto; }
 
 .portCenter section .ux-method-container {
@@ -99,15 +98,19 @@
   font-size: 16px;
   padding: 0 14%; }
 
-.portCenter .ux-sample-description {
-  height: 1000px;
+.ux-sample-description {
   padding: 80px 0; }
 
-.portCenter .hero-image {
+.ux-sample-description-alt {
+  background: linear-gradient(#2a3134, #171B1E); }
+
+.portCenter .hero-image-container {
   margin: 0;
-  background: url("../images/crunched/crunched-promo-bg.jpg") center no-repeat;
-  background-size: cover;
   max-width: 100%; }
+
+#crunched-bg {
+  background: url("../images/crunched/crunched-promo-bg.jpg") center no-repeat;
+  background-size: cover; }
 
 .logoImage {
   width: 50vw;
@@ -126,7 +129,14 @@
 
 .one-col div,
 .two-col div {
-  text-align: left; }
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: auto; }
+  .one-col div :last-child,
+  .two-col div :last-child {
+    margin-bottom: 0; }
 
 .two-col {
   display: flex;
@@ -134,14 +144,6 @@
   .two-col div:last-child {
     margin-left: 20px; }
 
-@media (max-width: 920px) {
-  .one-col,
-  .two-col div {
-    margin: 0 20px; }
-
-  .two-col div:first-child {
-    margin-right: 0;
-    padding: 0; } }
 @-webkit-keyframes greenPulse {
   from {
     color: inherit; }
@@ -163,6 +165,14 @@
   -o-animation-duration: 2s;
   -o-animation-iteration-count: infinite; }
 
+@media (max-width: 920px) {
+  .one-col,
+  .two-col div {
+    margin: 0 20px; }
+
+  .two-col div:first-child {
+    margin-right: 0;
+    padding: 0; } }
 #footer {
   margin-left: 375px;
   text-align: center;
