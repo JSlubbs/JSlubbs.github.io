@@ -98,7 +98,8 @@
   font-size: 16px;
   padding: 0 14%; }
 
-.ux-sample-description {
+.ux-sample-description,
+.ux-sample-description-alt {
   padding: 80px 0; }
 
 .ux-sample-description-alt {
@@ -210,6 +211,9 @@
   -o-animation-name: greenPulse2;
   -o-animation-duration: 2s;
   -o-animation-iteration-count: infinite; }
+
+h3 {
+  line-height: 3 !important; }
 
 #main {
   margin-left: 375px; }
