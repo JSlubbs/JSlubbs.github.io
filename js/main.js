@@ -9,7 +9,7 @@ $( document ).ready(function() {
         $( ".inactiveImage" ).eq( index ).removeClass( "inactiveImage");
 
         // Fade in promo image
-        $('.logoImage').delay(250).animate({opacity: 1}, 1500);
+        $('.logoImage').animate({opacity: 1}, 1500);
     });
 
     // Scroll back to index upon pure-drawer close
