@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd523851-7dfc-4681-9fdd-a45149a23947" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thumbs/WD1a.svg" afterPath="$PROJECT_DIR$/images/thumbs/WD1a.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_portfolio.scss" afterPath="$PROJECT_DIR$/css/_portfolio.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JSlubbs.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/_portfolio.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
-              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+            <state vertical-scroll-proportion="-4.48" vertical-offset="31" max-vertical-offset="1455">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.7083335" vertical-offset="799" max-vertical-offset="3975">
-              <caret line="64" column="30" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.44362018" vertical-offset="2161" max-vertical-offset="3975">
+              <caret line="164" column="115" selection-start-line="164" selection-start-column="115" selection-end-line="164" selection-end-column="115" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -371,16 +371,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7083335" vertical-offset="799" max-vertical-offset="3975">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
@@ -391,9 +381,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/_portfolio.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
-          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        <state vertical-scroll-proportion="-4.48" vertical-offset="31" max-vertical-offset="1455">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44362018" vertical-offset="2161" max-vertical-offset="3975">
+          <caret line="164" column="115" selection-start-line="164" selection-start-column="115" selection-end-line="164" selection-end-column="115" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
