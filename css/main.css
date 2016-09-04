@@ -118,6 +118,9 @@
   margin: 20vh 0 !important;
   opacity: 0; }
 
+#crunched-backlog-image {
+  width: 100%; }
+
 .pure-toggle-label i {
   -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -213,7 +216,7 @@
   -o-animation-iteration-count: infinite; }
 
 h3 {
-  line-height: 3 !important; }
+  margin-bottom: 1em !important; }
 
 #main {
   margin-left: 375px; }
