@@ -54,23 +54,34 @@
 .ux-sample p { color: #666 }
 
 .one-col div,
-.two-col div {
+.two-col {
   text-align: left;
   display: flex;
-  flex-direction: column;
-  max-width: 900px;
   margin: auto;
+  max-width: 900px;
 
   :last-child {
     margin-bottom: 0;
   }
 }
 
-.two-col {
+.one-col div { flex-direction: column; }
+
+div .two-col {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+
+  div { width: 50% }
 
   div:last-child { margin-left: 20px; }
+}
+
+div .wireframes {
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @-webkit-keyframes greenPulse {
