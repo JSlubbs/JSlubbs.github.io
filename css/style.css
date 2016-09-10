@@ -1,6 +1,15 @@
 @charset 'UTF-8';
 
-@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+@font-face{
+	font-family:'FontAwesome';
+	src:url('font/fontawesome-webfont.eot?v=4.0.1');
+	src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),
+		url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),
+		url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),
+		url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
+	font-weight:normal;
+	font-style:normal
+}
 
 /*
 	Prologue 1.2 by HTML5 UP
@@ -29,7 +38,6 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #bbb;
 		-webkit-text-stroke: 0.15px;
 	}
 
@@ -251,15 +259,15 @@
 		  	-o-transition: all .2s ease-out;
 		  	-ms-transition: all .2s ease-out;
 		  	transition: all .2s ease-out;
-		  	-webkit-filter: grayscale(0%); 
+		  	-webkit-filter: grayscale(0%);
 			filter: grayscale(0%);
 		}
-		
+
 		.zoom:hover
 		{
 			cursor: pointer;
 		    transform:scale(1.2);
-		    -ms-transform:scale(1.2); 
+		    -ms-transform:scale(1.2);
 		    -moz-transform:scale(1.2);
 		    -webkit-transform:scale(1.2);
 		    -o-transform:scale(1.2);
@@ -586,8 +594,8 @@
 		.downArrow {
 		  background-size: contain;
 		  margin: auto;
-		  width: 0; 
-		  height: 0; 
+		  width: 0;
+		  height: 0;
 		  border-left: 20px solid transparent;
 		  border-right: 20px solid transparent;
 		  border-top: 20px solid #1bbb89;
@@ -640,4 +648,4 @@
 			transition: opacity 0.25s ease-in-out;
 		}
 
-		.cargo:hover::before { opacity: 1.0; }
+		.cargo:hover::before { opacity: 1.0; }1.0; }

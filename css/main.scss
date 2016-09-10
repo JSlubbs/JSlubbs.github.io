@@ -8,6 +8,10 @@ h3 {
   margin-bottom: 1em !important;
 }
 
+body,input,textarea,select {
+  color: $js-light-gray;
+}
+
 #main {
   margin-left: 375px;
 
@@ -21,8 +25,6 @@ h3 {
 
   #welcomeSection {
     padding: 0 40px 40px 40px;
-    background-color: #2a3134;
-    background: linear-gradient(#2a3134, #171B1E);
 
     .container { margin: 8em 0 3em; }
   }
@@ -31,7 +33,7 @@ h3 {
     background-color: $js-green;
     width: 100%;
     font-size: 2.5rem;
-    color: #fff;
+    color: $js-white;
     line-height: 4rem;
     text-align: center;
     padding: 3rem 3rem;
@@ -48,9 +50,13 @@ h3 {
 
   #contactSection {
     padding: 0 0 4em 0;
-    background-color: #2a3134;
-    background: linear-gradient(#2a3134, #171B1E);
 
     p { padding: 0 40px; }
+  }
+
+  #welcomeSection,
+  #contactSection {
+    background-color: #2a3134;
+    background: linear-gradient(#2a3134, #171B1E);
   }
 }

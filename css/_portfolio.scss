@@ -12,6 +12,7 @@
   line-height: 4;
   font-size: 16px;
   padding: 0 14%;
+  color: $js-dark-gray;
 }
 
 .ux-sample-description,
@@ -45,8 +46,7 @@
   opacity: 0;
 }
 
-#crunched-backlog-image,
-#crunched-render-image {
+#crunched-image-asset {
   width: 100%;
 }
 
