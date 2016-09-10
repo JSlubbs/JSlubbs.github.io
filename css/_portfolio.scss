@@ -19,8 +19,14 @@
   padding: 80px 0;
 }
 
+.ux-sample-description {
+  h3, p { color: #666666; }
+}
+
 .ux-sample-description-alt {
   background: linear-gradient(#2a3134, #171B1E);
+
+  h3, p { color: #bbbbbb; }
 }
 
 .portCenter .hero-image-container {
@@ -39,7 +45,8 @@
   opacity: 0;
 }
 
-#crunched-backlog-image {
+#crunched-backlog-image,
+#crunched-render-image {
   width: 100%;
 }
 
