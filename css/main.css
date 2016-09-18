@@ -127,6 +127,31 @@
 .crunched-image-asset {
   width: 100%; }
 
+.ux-tools {
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: bold; }
+
+#user-testing-logo,
+#photoshop-logo,
+#balsamiq-logo,
+#html-css-js-logo,
+#html-css-js-logo-alt,
+#jira-logo {
+  margin-bottom: 30px; }
+
+#user-testing-logo,
+#html-css-js-logo,
+#html-css-js-logo-alt {
+  width: 8em; }
+
+#jira-logo,
+#balsamiq-logo {
+  width: 5em; }
+
+#photoshop-logo {
+  width: 2.5em; }
+
 .pure-toggle-label i {
   -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
