@@ -12,6 +12,10 @@ body,input,textarea,select {
   color: $js-light-gray;
 }
 
+#header { z-index: 1; }
+
+.shift-down { z-index: 0 !important; }
+
 #main {
   margin-left: 375px;
 

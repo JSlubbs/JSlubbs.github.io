@@ -8,7 +8,8 @@ $( document ).ready(function() {
         $( "#portContainer" ).children().addClass( "inactiveImage");
         $( ".inactiveImage" ).eq( index ).removeClass( "inactiveImage");
 
-        // Fade in promo image
+        // Fade in promo image and shift header layer down
+        $('#header').addClass('shift-down');
         $('.logoImage').animate({opacity: 1}, 1500);
     });
 
@@ -19,7 +20,8 @@ $( document ).ready(function() {
             scrollTop: $( "#portfolioSection" ).offset().top
         }, 500);
 
-        // Fade out promo image
+        // Fade out promo image and shift header layer up
         $('.logoImage').delay(500).animate({opacity: 0});
+        $('#header').removeClass('shift-down');
     });
 });

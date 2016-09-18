@@ -124,7 +124,7 @@
   margin: 20vh 0 !important;
   opacity: 0; }
 
-#crunched-image-asset {
+.crunched-image-asset {
   width: 100%; }
 
 .pure-toggle-label i {
@@ -1513,6 +1513,12 @@ h3 {
 
 body, input, textarea, select {
   color: #bbb; }
+
+#header {
+  z-index: 1; }
+
+.shift-down {
+  z-index: 0 !important; }
 
 #main {
   margin-left: 375px; }
