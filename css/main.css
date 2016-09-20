@@ -127,12 +127,15 @@
 .crunched-image-asset {
   width: 100%; }
 
+#app-snapshot {
+  width: 100%; }
+
 .ux-tools {
   margin-bottom: 0;
   font-style: italic;
   font-weight: bold; }
 
-#user-testing-logo,
+#zendesk-logo,
 #photoshop-logo,
 #balsamiq-logo,
 #html-css-js-logo,
@@ -140,7 +143,7 @@
 #jira-logo {
   margin-bottom: 30px; }
 
-#user-testing-logo,
+#zendesk-logo,
 #html-css-js-logo,
 #html-css-js-logo-alt {
   width: 8em; }
