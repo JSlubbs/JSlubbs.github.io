@@ -103,11 +103,6 @@
 .ux-sample-description-alt {
   padding: 80px 0; }
 
-.conclusion {
-  padding: 160px 0; }
-  .conclusion h3, .conclusion p {
-    text-align: center; }
-
 .ux-sample-description h3, .ux-sample-description p {
   color: #666666; }
 
@@ -116,18 +111,31 @@
   .ux-sample-description-alt h3, .ux-sample-description-alt p {
     color: #bbbbbb; }
 
+.conclusion {
+  padding: 160px 0; }
+  .conclusion h3, .conclusion p {
+    text-align: center; }
+
 .portCenter .hero-image-container {
   margin: 0;
-  max-width: 100%; }
-
-#crunched-bg {
-  background: url("../images/crunched/crunched-promo-bg.jpg") center no-repeat;
+  max-width: 100%;
   background-size: cover; }
 
+#crunched-bg {
+  background: url("../images/crunched/crunched-promo-bg.jpg") center no-repeat; }
+
+#predicata-bg {
+  background: url("../images/predicata/predicata-promo-bg.jpg") center no-repeat; }
+
 .logoImage {
-  width: 50vw;
   margin: 20vh 0 !important;
   opacity: 0; }
+
+#crunched-logo {
+  width: 50vw; }
+
+#predicata-logo {
+  width: 40vw; }
 
 .crunched-image-asset {
   width: 100%; }
@@ -140,24 +148,24 @@
   font-style: italic;
   font-weight: bold; }
 
-#zendesk-logo,
-#photoshop-logo,
-#balsamiq-logo,
-#html-css-js-logo,
-#html-css-js-logo-alt,
-#jira-logo {
+.zendesk-logo,
+.photoshop-logo,
+.balsamiq-logo,
+.html-css-js-logo,
+.html-css-js-logo-alt,
+.jira-logo {
   margin-bottom: 30px; }
 
-#zendesk-logo,
-#html-css-js-logo,
-#html-css-js-logo-alt {
+.zendesk-logo,
+.html-css-js-logo,
+.html-css-js-logo-alt {
   width: 8em; }
 
-#jira-logo,
-#balsamiq-logo {
+.jira-logo,
+.balsamiq-logo {
   width: 5em; }
 
-#photoshop-logo {
+.photoshop-logo {
   width: 2.5em; }
 
 .pure-toggle-label i {
