@@ -103,6 +103,11 @@
 .ux-sample-description-alt {
   padding: 80px 0; }
 
+.conclusion {
+  padding: 160px 0; }
+  .conclusion h3, .conclusion p {
+    text-align: center; }
+
 .ux-sample-description h3, .ux-sample-description p {
   color: #666666; }
 
