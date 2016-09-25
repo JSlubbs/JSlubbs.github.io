@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     $( ".item" ).click(function() {
 
+        // Disabling "Main" section scrolling
         $('body').css({"position": "fixed", "overflow": "hidden"});
 
         // Changing clicked index file to visible in drawer
