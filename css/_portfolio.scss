@@ -39,7 +39,7 @@
 .portCenter .hero-image-container {
   margin: 0;
   max-width: 100%;
-  background-size: cover;
+  background-size: cover !important;
 }
 
 #crunched-bg { background: url("../images/crunched/crunched-promo-bg.jpg") center no-repeat; }
@@ -72,6 +72,7 @@
 .balsamiq-logo,
 .html-css-js-logo,
 .html-css-js-logo-alt,
+.sketch-logo,
 .jira-logo { margin-bottom: 30px; }
 
 .zendesk-logo,
@@ -81,7 +82,8 @@
 .jira-logo,
 .balsamiq-logo { width: 5em; }
 
-.photoshop-logo { width: 2.5em; }
+.photoshop-logo,
+.sketch-logo { width: 2.5em; }
 
 // End Tools
 
