@@ -127,6 +127,9 @@
 #predicata-bg {
   background: url("../images/predicata/predicata-promo-bg.jpg") center no-repeat; }
 
+#cognex-bg {
+  background: url("../images/cognex/cog-promo-bg.png") center no-repeat; }
+
 .logoImage {
   margin: 20vh 0 !important;
   opacity: 0; }
@@ -137,17 +140,11 @@
 #predicata-logo {
   width: 40vw; }
 
+#cognex-logo {
+  width: 42vw; }
+
 .portfolio-image-asset {
   width: 100%; }
-
-#pr-prototype-container {
-  position: relative; }
-  #pr-prototype-container #pr-protype-image {
-    position: absolute;
-    width: 82.7%;
-    height: 85.8%;
-    margin-top: 4.25%;
-    margin-left: 8.75%; }
 
 #app-snapshot {
   width: 100%; }
@@ -160,12 +157,18 @@
 .zendesk-logo,
 .photoshop-logo,
 .balsamiq-logo,
+.powerpoint-logo,
 .marvel-logo,
 .html-css-js-logo,
 .html-css-js-logo-alt,
 .sketch-logo,
-.jira-logo {
+.jira-logo,
+.jira-logo-alt,
+.confluence-logo-alt {
   margin-bottom: 30px; }
+
+.confluence-logo-alt {
+  width: 12em; }
 
 .zendesk-logo,
 .html-css-js-logo,
@@ -173,12 +176,14 @@
   width: 8em; }
 
 .jira-logo,
+.jira-logo-alt,
 .balsamiq-logo,
 .marvel-logo {
   width: 5em; }
 
 .photoshop-logo,
-.sketch-logo {
+.sketch-logo,
+.powerpoint-logo {
   width: 2.5em; }
 
 .pure-toggle-label i {
@@ -217,6 +222,15 @@ div .wireframes {
   div .wireframes img {
     width: 100%;
     height: 100%; }
+
+#pr-prototype-container {
+  position: relative; }
+  #pr-prototype-container #pr-protype-image {
+    position: absolute;
+    width: 82.7%;
+    height: 85.8%;
+    margin-top: 4.25%;
+    margin-left: 8.75%; }
 
 @-webkit-keyframes greenPulse {
   from {
