@@ -76,6 +76,7 @@
 .balsamiq-logo,
 .powerpoint-logo,
 .marvel-logo,
+.invision-logo,
 .html-css-js-logo,
 .html-css-js-logo-alt,
 .sketch-logo,
@@ -96,6 +97,7 @@
 
 .photoshop-logo,
 .sketch-logo,
+.invision-logo,
 .powerpoint-logo { width: 2.5em; }
 
 // End Tools
@@ -142,43 +144,32 @@ div .wireframes {
 }
 
 
-// Predicata - Custom iPad container
-#pr-prototype-container {
+// Custom iPad containers
+#pr-prototype-container,
+#cog-prototype-container {
   position: relative;
 
+  #pr-protype-image,
+  #cog-prototype-image { position: absolute }
+
   #pr-protype-image {
-    position: absolute;
     width: 82.7%;
     height: 85.8%;
     margin-top: 4.25%;
     margin-left: 8.75%;
   }
+
+  #cog-prototype-image {
+    width: 81.55%;
+    height: 87.55%;
+    margin-top: 5.1%;
+    margin-left: 9.65%;
+  }
 }
 
-@-webkit-keyframes greenPulse {
-  from { color: inherit}
-  50% { color: #1bbb89}
-  to { color: inherit}
-}
+#cog-prototype-container { margin-bottom: 2em; }
 
-.fa-times::before {
-  animation-name: greenPulse;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-name: greenPulse;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-
-  -moz-animation-name: greenPulse;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-
-  -o-animation-name: greenPulse;
-  -o-animation-duration: 2s;
-  -o-animation-iteration-count: infinite;
-}
-
+// Media queries
 @media (max-width: 920px) {
   .one-col,
   .two-col div {

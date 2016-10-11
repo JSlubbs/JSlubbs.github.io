@@ -159,6 +159,7 @@
 .balsamiq-logo,
 .powerpoint-logo,
 .marvel-logo,
+.invision-logo,
 .html-css-js-logo,
 .html-css-js-logo-alt,
 .sketch-logo,
@@ -183,6 +184,7 @@
 
 .photoshop-logo,
 .sketch-logo,
+.invision-logo,
 .powerpoint-logo {
   width: 2.5em; }
 
@@ -223,35 +225,29 @@ div .wireframes {
     width: 100%;
     height: 100%; }
 
-#pr-prototype-container {
+#pr-prototype-container,
+#cog-prototype-container {
   position: relative; }
-  #pr-prototype-container #pr-protype-image {
-    position: absolute;
+  #pr-prototype-container #pr-protype-image,
+  #pr-prototype-container #cog-prototype-image,
+  #cog-prototype-container #pr-protype-image,
+  #cog-prototype-container #cog-prototype-image {
+    position: absolute; }
+  #pr-prototype-container #pr-protype-image,
+  #cog-prototype-container #pr-protype-image {
     width: 82.7%;
     height: 85.8%;
     margin-top: 4.25%;
     margin-left: 8.75%; }
+  #pr-prototype-container #cog-prototype-image,
+  #cog-prototype-container #cog-prototype-image {
+    width: 81.55%;
+    height: 87.55%;
+    margin-top: 5.1%;
+    margin-left: 9.65%; }
 
-@-webkit-keyframes greenPulse {
-  from {
-    color: inherit; }
-  50% {
-    color: #1bbb89; }
-  to {
-    color: inherit; } }
-.fa-times::before {
-  animation-name: greenPulse;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: greenPulse;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-name: greenPulse;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-name: greenPulse;
-  -o-animation-duration: 2s;
-  -o-animation-iteration-count: infinite; }
+#cog-prototype-container {
+  margin-bottom: 2em; }
 
 @media (max-width: 920px) {
   .one-col,
@@ -1580,7 +1576,7 @@ h3 {
   margin-bottom: 1em !important; }
 
 body, input, textarea, select {
-  color: #bbb; }
+  color: #aaa; }
 
 #header {
   z-index: 1; }
