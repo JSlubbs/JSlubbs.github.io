@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $( ".item" ).click(function() {
+    $(".item").click(function() {
 
         // Disabling "Main" section scrolling
         $('body').css({"position": "fixed", "overflow": "hidden"});
@@ -8,6 +8,11 @@ $( document ).ready(function() {
         var index = $( ".item" ).index( this );
         $( "#portContainer" ).children().addClass( "inactiveImage");
         $( ".inactiveImage" ).eq( index ).removeClass( "inactiveImage");
+
+        // Start at top of portfolio item
+        $('#portContainer').animate({
+            scrollTop: $( "#portContainer" ).offset().top
+        }, 1);
 
         // Fade in promo image and shift header layer down
         $('#header').addClass('shift-down');
