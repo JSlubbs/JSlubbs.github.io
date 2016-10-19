@@ -258,13 +258,13 @@ div .wireframes {
   margin-left: 375px;
   text-align: center;
   background-color: #1bbb89;
-  padding: 1em 0 2em 0;
+  padding: 1em 0 1em 0;
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
   font-size: 0.8em; }
   #footer .copyright {
-    line-height: 1.25em; }
+    line-height: 0; }
     #footer .copyright p {
-      margin: 1em 0 0 0;
+      margin: .5em 0 .5em 0;
       color: white;
       font-weight: 400;
       letter-spacing: .05rem; }
