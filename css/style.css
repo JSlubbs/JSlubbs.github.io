@@ -252,29 +252,6 @@
 					width: auto;
 				}
 
-		.zoom
-		{
-			-webkit-transition: all .2s ease-out;
-		  	-moz-transition: all .2s ease-out;
-		  	-o-transition: all .2s ease-out;
-		  	-ms-transition: all .2s ease-out;
-		  	transition: all .2s ease-out;
-		  	-webkit-filter: grayscale(0%);
-			filter: grayscale(0%);
-		}
-
-		.zoom:hover
-		{
-			cursor: pointer;
-		    transform:scale(1.2);
-		    -ms-transform:scale(1.2);
-		    -moz-transform:scale(1.2);
-		    -webkit-transform:scale(1.2);
-		    -o-transform:scale(1.2);
-		    -webkit-filter: grayscale(0%);
-			filter: grayscale(0%);
-		}
-
 		.wrapper
 		{
 			position: relative;
@@ -524,6 +501,7 @@
 
 		.item:hover
 		{
+			/*box-shadow: 0 0 15px rgba(0, 0, 0, 1);*/
 		}
 
 			.item header

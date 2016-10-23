@@ -1,4 +1,16 @@
 $( document ).ready(function() {
+
+    // Display case-study overlay on thumbnail hover
+    $(".item").mouseenter(function() {
+        $(this).find(".hover-info").addClass("display-me");
+    });
+
+    // Display case-study overlay on thumbnail hover
+    $(".item").mouseleave(function() {
+        $(this).find(".hover-info").removeClass("display-me");
+    });
+
+    // Initialize portfolio on clicking thumbnail
     $(".item").click(function() {
 
         // Disabling "Main" section scrolling

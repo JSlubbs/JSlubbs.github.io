@@ -1608,6 +1608,36 @@ body, input, textarea, select {
     background-color: #eee; }
     #main #portfolioSection p {
       padding: 0 40px; }
+    #main #portfolioSection .block-ad {
+      margin: 40px; }
+    #main #portfolioSection .hover-info {
+      background: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      padding-top: 250px;
+      color: white;
+      opacity: 0;
+      font-size: 2em;
+      -moz-transition: opacity 0.25s ease-in-out;
+      -webkit-transition: opacity 0.25s ease-in-out;
+      -o-transition: opacity 0.25s ease-in-out;
+      -ms-transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.25s ease-in-out; }
+    #main #portfolioSection .display-me {
+      opacity: 1; }
+    #main #portfolioSection .margin-top-none {
+      margin-top: 0; }
+    #main #portfolioSection .thumbnail-blurb {
+      position: absolute;
+      bottom: 0;
+      line-height: 1;
+      z-index: 2;
+      font-size: 2vw;
+      margin: 2vw;
+      width: 94.6%;
+      color: #fff; }
   #main #contactSection {
     padding: 0 0 4em 0; }
     #main #contactSection p {
