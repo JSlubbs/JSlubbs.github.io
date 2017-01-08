@@ -1,0 +1,181 @@
+#skel-panels-pageWrapper{
+  z-index: 1;
+}
+
+.portCenter section {
+  margin: auto;
+}
+
+.portCenter section .ux-method-container {
+  width: 100%;
+  text-align: center;
+  line-height: 4;
+  font-size: 16px;
+  padding: 0 14%;
+  color: $js-dark-gray;
+}
+
+.ux-sample-description,
+.ux-sample-description-alt {
+  padding: 80px 0;
+}
+
+.ux-sample-description {
+  h3, p { color: #666666; }
+}
+
+.ux-sample-description-alt {
+  background: linear-gradient(#2a3134, #171B1E);
+
+  h3, p { color: #bbbbbb; }
+}
+
+.conclusion {
+  padding: 160px 0;
+
+  h3, p { text-align: center; }
+}
+
+.portCenter .hero-image-container {
+  margin: 0;
+  max-width: 100%;
+  background-size: cover !important;
+}
+
+// Hero Backgrounds + Containers
+#crunched-bg { background: url("../images/crunched/crunched-promo-bg.png") center no-repeat; }
+#predicata-bg { background: url("../images/predicata/predicata-promo-bg.png") center no-repeat; }
+#cognex-bg { background: url("../images/cognex/cog-promo-bg-2.png") center no-repeat; }
+
+.logoImage {
+  margin: 20vh 0 !important;
+  opacity: 0;
+}
+
+// Hero Logos
+#crunched-logo { width: 50vw; }
+#predicata-logo { width: 40vw; }
+#cognex-logo { width: 42vw; }
+
+.portfolio-image-asset {
+  width: 100%;
+}
+
+// Tools
+
+.ux-tools {
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.zendesk-logo,
+.photoshop-logo,
+.balsamiq-logo,
+.powerpoint-logo,
+.marvel-logo,
+.invision-logo,
+.html-css-js-logo,
+.html-css-js-logo-alt,
+.sketch-logo,
+.jira-logo,
+.jira-logo-alt,
+.confluence-logo-alt { margin-bottom: 30px; }
+
+.confluence-logo-alt { width: 12em; }
+
+.zendesk-logo,
+.html-css-js-logo,
+.html-css-js-logo-alt { width: 8em; }
+
+.jira-logo,
+.jira-logo-alt,
+.balsamiq-logo,
+.marvel-logo { width: 5em; }
+
+.photoshop-logo,
+.sketch-logo,
+.invision-logo,
+.powerpoint-logo { width: 2.5em; }
+
+// End Tools
+
+.pure-toggle-label i {
+  -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+}
+
+.ux-sample p { color: #666 }
+
+.one-col div,
+.two-col {
+  text-align: left;
+  display: flex;
+  margin: auto;
+  max-width: 900px;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.one-col div { flex-direction: column; }
+
+div .two-col {
+  display: flex;
+  flex-direction: row;
+
+  div { width: 50% }
+
+  div:last-child { margin-left: 20px; }
+}
+
+div .wireframes {
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+// Custom iPad containers
+#pr-prototype-container,
+#cog-prototype-container {
+  position: relative;
+
+  #pr-protype-image,
+  #cog-prototype-image { position: absolute }
+
+  #pr-protype-image {
+    width: 82.7%;
+    height: 85.8%;
+    margin-top: 4.25%;
+    margin-left: 8.75%;
+  }
+
+  #cog-prototype-image {
+    width: 81.55%;
+    height: 87.55%;
+    margin-top: 5.1%;
+    margin-left: 9.65%;
+  }
+}
+
+#cog-prototype-container { margin-bottom: 2em; }
+
+// Media queries
+@media (max-width: 920px) {
+  .one-col,
+  .two-col div {
+    margin: 0 20px;
+  }
+
+  .two-col div:first-child {
+    margin-right: 0;
+    padding: 0;
+  }
+}

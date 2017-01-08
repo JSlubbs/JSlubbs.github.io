@@ -57,8 +57,9 @@
 		width: 20%;
 	}
 
-	#logo
-	{
+	#logo { 
+		margin: 1.75em 1.5em 1.5em 1.5em;
+		min-height: 165px;
 	}
 
 		#logo .image
