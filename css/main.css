@@ -34,8 +34,8 @@
 
 #logo {
   position: relative;
-  margin: 1.75em 1.5em 3em 1.5em;
-  min-height: 172px;
+  margin: 3.5em 1.5em;
+  min-height: 2.5em;
   cursor: default; }
   #logo h1 {
     position: relative;
@@ -111,6 +111,7 @@
   .ux-sample-description-alt h3, .ux-sample-description-alt p {
     color: #bbbbbb; }
 
+
 .conclusion {
   padding: 160px 0; }
   .conclusion h3, .conclusion p {
@@ -120,6 +121,14 @@
   margin: 0;
   max-width: 100%;
   background-size: cover !important; }
+
+.bullet {
+  list-style-type: initial;
+  padding-left: 40px;
+}
+
+#conductor-bg {
+  background: url("../images/conductor/hero-bg---conductor.png") center no-repeat; }
 
 #crunched-bg {
   background: url("../images/crunched/crunched-promo-bg.png") center no-repeat; }
@@ -144,7 +153,9 @@
   width: 42vw; }
 
 .portfolio-image-asset {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
 
 .ux-tools {
   margin-bottom: 0;
@@ -162,21 +173,36 @@
 .sketch-logo,
 .jira-logo,
 .jira-logo-alt,
-.confluence-logo-alt {
+.confluence-logo-alt,
+.zendesk-airtable-logo, 
+.gong-io-logo, 
+.axure-logo, 
+.axure-logo-alt, 
+.pendo-logo, 
+.heap-logo {
   margin-bottom: 30px; }
+
+.zendesk-airtable-logo {
+  width: 20em;
+}
 
 .confluence-logo-alt {
   width: 12em; }
 
 .zendesk-logo,
 .html-css-js-logo,
-.html-css-js-logo-alt {
+.html-css-js-logo-alt,
+.axure-logo, 
+.axure-logo-alt, 
+.pendo-logo, 
+.heap-logo {
   width: 8em; }
 
 .jira-logo,
 .jira-logo-alt,
 .balsamiq-logo,
-.marvel-logo {
+.marvel-logo, 
+.gong-io-logo {
   width: 5em; }
 
 .photoshop-logo,
@@ -194,6 +220,10 @@
 
 .ux-sample p {
   color: #666; }
+
+.row {
+  padding-bottom: 40px;
+}
 
 .one-col div,
 .two-col {
@@ -254,6 +284,7 @@ div .wireframes {
   .two-col div:first-child {
     margin-right: 0;
     padding: 0; } }
+
 #footer {
   margin-left: 375px;
   text-align: center;
@@ -277,7 +308,9 @@ div .wireframes {
   50% {
     color: #1bbb89; }
   to {
-    color: #41484c; } }
+    color: #41484c; } 
+  }
+
 .fa-briefcase::before {
   animation-name: greenPulse2;
   animation-duration: 2s;
@@ -1609,17 +1642,17 @@ body, input, textarea, select {
     #main #portfolioSection p {
       padding: 0 40px; }
     #main #portfolioSection .block-ad {
-      margin: 40px; }
+      margin: 40px 40px 10px; }
     #main #portfolioSection .hover-info {
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.85);
       position: absolute;
       width: 100%;
       height: 100%;
       z-index: 4;
-      padding-top: 250px;
+      padding-top: 23%;
       color: white;
       opacity: 0;
-      font-size: 2em;
+      font-size: 18px;
       -moz-transition: opacity 0.25s ease-in-out;
       -webkit-transition: opacity 0.25s ease-in-out;
       -o-transition: opacity 0.25s ease-in-out;
@@ -1630,14 +1663,15 @@ body, input, textarea, select {
     #main #portfolioSection .margin-top-none {
       margin-top: 0; }
     #main #portfolioSection .thumbnail-blurb {
-      position: absolute;
-      bottom: 0;
-      line-height: 1;
-      z-index: 2;
-      font-size: 2vw;
-      margin: 2vw;
-      width: 94.6%;
-      color: #fff; }
+      /*position: absolute;*/
+      /*bottom: 0;*/
+      line-height: 1.25;
+      /*z-index: 2;*/
+      font-size: 16px;
+      padding: 0 40px;
+      /*margin: 2vw;*/
+      /*width: 94.6%;*/
+      color: #666; }
   #main #contactSection {
     padding: 0 0 4em 0; }
     #main #contactSection p {
