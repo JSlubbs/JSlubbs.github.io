@@ -146,6 +146,9 @@
 #crunched-logo {
   width: 50vw; }
 
+#conductor-result-types-logo {
+  width: 40vw; }
+
 #predicata-logo {
   width: 40vw; }
 
@@ -1614,7 +1617,7 @@ body, input, textarea, select {
 .shift-down {
   z-index: 0 !important; }
 
-.conductor-bg #conductor-logo {
+.conductor-bg #conductor-result-types-logo {
   width: 260px;
 }
 
