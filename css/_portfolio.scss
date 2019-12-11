@@ -43,6 +43,7 @@
 }
 
 // Hero Backgrounds + Containers
+#conductor-bg { background: url("../images/conductor/hero-bg---conductor.png") center no-repeat; }
 #crunched-bg { background: url("../images/crunched/crunched-promo-bg.png") center no-repeat; }
 #predicata-bg { background: url("../images/predicata/predicata-promo-bg.png") center no-repeat; }
 #cognex-bg { background: url("../images/cognex/cog-promo-bg-2.png") center no-repeat; }
@@ -56,7 +57,7 @@
 #crunched-logo { width: 50vw; }
 #predicata-logo { width: 40vw; }
 #cognex-logo { width: 42vw; }
-#conductor-result-types-logo { width: 30vw; }  
+#conductor-result-types-logo { width: 50vw; }  
 
 .portfolio-image-asset {
   width: 100%;
