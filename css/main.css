@@ -147,7 +147,7 @@
   width: 50vw; }
 
 #conductor-result-types-logo {
-  width: 20em; }
+  width: 30vw; }
 
 #predicata-logo {
   width: 40vw; }
@@ -286,7 +286,11 @@ div .wireframes {
 
   .two-col div:first-child {
     margin-right: 0;
-    padding: 0; } }
+    padding: 0; } 
+
+  #conductor-result-types-logo {
+  width: 5vw; }  
+  }
 
 #footer {
   margin-left: 375px;
