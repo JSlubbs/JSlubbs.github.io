@@ -122,9 +122,32 @@
   max-width: 100%;
   background-size: cover !important; }
 
-.bullet {
+.bullet-dark-bg {
   list-style-type: initial;
   padding-left: 40px;
+}
+
+.bullet-light-bg {
+  list-style-type: initial;
+  padding-left: 40px;
+  color: #666666;
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#feature-video {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 47.1vw;
+}
+
+#keyword-performance-roll-up,
+#visibility-comparisons-outline {
+  margin-top: 15px;
 }
 
 #conductor-bg {
@@ -146,8 +169,9 @@
 #crunched-logo {
   width: 50vw; }
 
-#conductor-result-types-logo {
-  width: 50vw; }
+#conductor-result-types-logo,
+#conductor-visibility-comparisons-logo {
+  width: 35vw; }
 
 #predicata-logo {
   width: 40vw; }
