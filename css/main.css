@@ -145,6 +145,8 @@
   height: 47.1vw;
 }
 
+.horizontal-rule { margin: 0 40px 80px }
+
 #keyword-performance-roll-up,
 #visibility-comparisons-outline {
   margin-top: 15px;
@@ -206,7 +208,8 @@
 .axure-logo, 
 .axure-logo-alt, 
 .pendo-logo, 
-.heap-logo {
+.heap-logo, 
+.sketch-zeplin-logo {
   margin-bottom: 30px; }
 
 .zendesk-airtable-logo {
@@ -222,7 +225,8 @@
 .axure-logo, 
 .axure-logo-alt, 
 .pendo-logo, 
-.heap-logo {
+.heap-logo, 
+.sketch-zeplin-logo {
   width: 8em; }
 
 .jira-logo,
@@ -1701,6 +1705,7 @@ body, input, textarea, select {
       /*z-index: 2;*/
       font-size: 16px;
       padding: 0 40px;
+      margin-top: 10px;
       /*margin: 2vw;*/
       /*width: 94.6%;*/
       color: #666; }
