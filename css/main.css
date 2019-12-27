@@ -100,7 +100,8 @@
   color: #666; }
 
 .ux-sample-description,
-.ux-sample-description-alt {
+.ux-sample-description-alt, 
+.ux-sample-description-green {
   padding: 80px 0; }
 
 .ux-sample-description h3, .ux-sample-description p {
@@ -111,6 +112,24 @@
   .ux-sample-description-alt h3, .ux-sample-description-alt p {
     color: #bbbbbb; }
 
+.ux-sample-description-green {
+  background: #1BBB89; }
+
+  .ux-sample-description-green h3, 
+  .ux-sample-description-green p {
+    color: #ffffff; }
+
+  .ux-sample-description-green .details-subhead {
+    font-weight: 700;
+  }
+
+  .ux-sample-description-green th, 
+  .ux-sample-description-green td {
+    color: white;
+    width: 50%;
+    padding-right: 2em;
+    line-height: 1.5;
+  }
 
 .conclusion {
   padding: 160px 0; }
@@ -241,6 +260,10 @@
 .invision-logo,
 .powerpoint-logo {
   width: 2.5em; }
+
+.close-button {
+  color: #888;
+}
 
 .pure-toggle-label i {
   -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
