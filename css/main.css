@@ -166,6 +166,11 @@
 
 .horizontal-rule { margin: 0 40px 80px }
 
+.in-section-divider-dark-bg {
+  border-color: #bbbbbb; 
+  width: 100%;
+}
+
 #keyword-performance-roll-up,
 #visibility-comparisons-outline {
   margin-top: 15px;
