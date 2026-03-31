@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor: View Orientation — Jonathan Slavuter</title>
+  <meta name="description" content="Case study: View Orientation Bar — a self-initiated design intervention that became a new app architecture and a 4× improvement on activation metrics.">
+  <link rel="stylesheet" href="style.css">
+  <script>if(sessionStorage.getItem("js_auth")!=="1"){var r=encodeURIComponent(location.pathname.split("/").pop());location.replace("login.html?r="+r);}</script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">JS</a>
+  <ul class="nav-links">
+    <li><a href="mcp-manager.html" class="nav-link-hide">MCP Manager</a></li>
+    <li><a href="visor.html" class="active">Visor</a></li>
+    <li><a href="about.html" class="nav-link-hide">About</a></li>
+    <li><a href="jonathan_slavuter_resume.pdf" target="_blank" class="nav-cta">Resume ↗</a></li>
+  </ul>
+</nav>
+
+<div class="cs-hero">
+  <a href="index.html" class="cs-back">← All work</a>
+  <p class="cs-hero-eyebrow">Head of Product Design · Visor / Rocketvisor · 2021–2025</p>
+  <h1 class="cs-title">Visor: View Orientation</h1>
+  <div class="cs-at-a-glance">
+    <div class="cs-stat">
+      <p class="cs-stat-label">Role</p>
+      <p class="cs-stat-value">Head of Product Design · Lead → Principal → Head</p>
+    </div>
+    <div class="cs-stat">
+      <p class="cs-stat-label">Problem</p>
+      <p class="cs-stat-value">Users had no orientation to start with; a problem nobody had named yet</p>
+    </div>
+    <div class="cs-stat">
+      <p class="cs-stat-label">Approach</p>
+      <p class="cs-stat-value">Introduced a status and config bar that evolved into a full orientation system and app architecture</p>
+    </div>
+    <div class="cs-stat">
+      <p class="cs-stat-label">Outcome</p>
+      <p class="cs-stat-value">4× improvement on activation metrics</p>
+    </div>
+  </div>
+</div>
+
+<div class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-section-label">The situation</p>
+    <h2 class="cs-h2">I noticed something no one had asked me to fix, and turned it into a product initiative.</h2>
+    <p class="cs-p">Visor is a project and roadmap management platform built around bidirectional sync with tools like Jira and Asana. I joined in 2021 as Lead Designer, built the design system from scratch, and owned product design end-to-end for four years, progressing from Lead to Head of Product Design.</p>
+    <p class="cs-p">This case study is about one project within that tenure: the View Orientation Bar. I noticed a pattern in user research: people kept losing their place when switching between views. Visor lets users work across Table, Gantt, Board, Timeline, and Dashboard views, each with its own configuration state: active filters, sort order, visible fields. Set a filter, switch views, come back. Nothing tells you what you're looking at or why. The friction was real and consistent. No one had named it as a problem yet.</p>
+    <p class="cs-p">This wasn't a feature request and it wasn't on any roadmap. Advocating for something no one had asked for, in a fast-moving early-stage team, meant making the problem legible before I could ask for time to solve it. That required connecting observations across many research sessions into a coherent case.</p>
+  </div>
+</div>
+
+<div class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-section-label">The Work</p>
+    <h2 class="cs-h2">View Orientation Bar → Visor Orientation Bonanza</h2>
+
+    <h3 class="cs-h3">A bar becomes an architecture</h3>
+    <p class="cs-p">The first version was narrow: a persistent bar surfacing active filters, hierarchy depth, and record count. Simple, always visible, grounding. Early iterations tested how much information to surface and how to compress it, the key insight being that '3 Filters Applied' as a count badge was more scannable than a toggle or a column header icon.</p>
+    <p class="cs-p">As the bar proved its value, the question shifted from what it should show to what it should do. View settings that had lived in scattered menus consolidated into the bar. Then view creation moved in. Then the view name became a navigation entry point: a dropdown into a full Views & Folders panel showing every view across every collaborator, grouped by owner. The bar had absorbed what was previously scattered across the product into a single, consistent interaction layer.</p>
+    <p class="cs-p">Separately, as the interface grew more complex, Mike wanted individual elements to have enough presence to hold their own. The Crystalmorphic direction (his term, based on how light refracts through crystals) emerged as the answer, starting with the gradient canvas as the foundational visual element.</p>
+
+    <div class="screen-placeholder"><span class="screen-placeholder-label">V0.5 — first filter count badge, the core insight</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">V1.0 — full configuration vocabulary across view types</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">V1.6 — Views & Folders panel open from VOB</span></div>
+
+    <h3 class="cs-h3">The shipped VOB: five views, one consistent pattern</h3>
+    <p class="cs-p">The final VOB adapts its vocabulary to each view type while maintaining consistent placement and interaction. Table: Filters, Rows displayed, Groups. Gantt: Date fields, Filters, Bars plotted, Bar colors, Groups. Board: Columns, Lanes, Filters, Cards plotted, Card colors. Timeline: Date fields, Filters, Bars, plus edge case indicators like '19 Tasks Not Plotted'. Dashboard has no VOB, a deliberate IA decision reflecting its distinct role as a reporting canvas.</p>
+
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Shipped Table View — Filters · Rows displayed · Groups</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Shipped Gantt View — date fields · filters · bars plotted</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Shipped Board View — columns · lanes · card colors</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Shipped Timeline View — edge case indicator</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Shipped Dashboard View — no VOB, reporting canvas</span></div>
+
+    <h3 class="cs-h3">The concept that didn't ship, but then did</h3>
+    <p class="cs-p">Late in the project, I explored a breadcrumb model for the top chrome: Workbook → Folder → View, all named and navigable, with the VOB stripped back to just Levels, Filter, and Records. The concept was deprioritized in Visor, not abandoned, but parted out. Elements fed into other areas of the product rather than shipping as a unified system.</p>
+    <p class="cs-p">The breadcrumb pattern shipped in MCP Manager, where the same hierarchy model became the primary wayfinding system for administrators navigating deep configuration trees. The Visor exploration didn't go to waste; it just shipped somewhere else.</p>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Breadcrumb concept — Workbook → Folder → View, minimal VOB</span></div>
+  </div>
+</div>
+
+<div class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-section-label">The System</p>
+    <h2 class="cs-h2">Atomic design, built from scratch.</h2>
+    <p class="cs-p">The Visor design system was built from near-zero using atomic design principles: tokens up through components, patterns, and templates. The system grew with the product over four years and eventually expanded to cover MCP Manager as well. The same token and component architecture spans both products, with separate variable collections (Visor: 101 variables, MCP Manager: 91 variables) and distinct brand, color, and typography treatments for each.</p>
+
+    <h3 class="cs-h3">Scale</h3>
+    <ul class="cs-ul">
+      <li>200+ components with 1,000+ variants and properties</li>
+      <li>60+ patterns</li>
+      <li>25 ideal resolution page templates + 25 minimum supported resolution page templates</li>
+      <li>280+ medium and 280+ small icons</li>
+      <li>40 external brands represented via icons and logos</li>
+    </ul>
+
+    <h3 class="cs-h3">The Crystalmorphic layer</h3>
+    <p class="cs-p">The Crystalmorphic direction (Mike's term for how light refracts through crystals) is implemented through dedicated Effect styles ('Crystalmorphic' and 'Crystalmorphic Container' shadow tokens) combined with a gradient color system built on spectrum-spanning ramps. The gradient canvas is the most visible expression, but the depth and glass quality come from the shadow layer.</p>
+
+    <h3 class="cs-h3">Five files</h3>
+    <p class="cs-p">The system is split across five Figma files: Brands, Tokens, Icons, Components, and Templates, a necessary division at this scale. The files are linked and reference each other via shared token variables.</p>
+
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Design system — Colors page showing Visor + MCP Manager side by side</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Design system — Variables panel (Visor: 101, MCP Manager: 91)</span></div>
+  </div>
+</div>
+
+<div class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-section-label">Outcome</p>
+    <h2 class="cs-h2">4× improvement on the metrics that matter.</h2>
+    <p class="cs-p">The VOB project's impact was measured through activation metrics, specifically the 'bought in' moment: registration → exploring features → inputting real data → refining a data story → inviting another user.</p>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <p class="cs-metric-value">4×</p>
+        <p class="cs-metric-label">Improvement in time to 'aha moment', faster activation from registration to real engagement</p>
+      </div>
+      <div class="cs-metric">
+        <p class="cs-metric-value">↑ Substantially</p>
+        <p class="cs-metric-label">Weekly % of new users inviting another user, the retention signal that mattered most</p>
+      </div>
+    </div>
+
+    <p class="cs-p">The project also changed how the team evaluated subsequent feature work. A self-initiated problem definition that started with a bar displaying filter state ended with a new app architecture, a new visual language, and a measurable improvement in the metric that predicted long-term retention.</p>
+  </div>
+</div>
+
+<div class="cs-next">
+  <div>
+    <p class="cs-next-label">Also see</p>
+    <h2 class="cs-next-title">MCP Manager</h2>
+  </div>
+  <div>
+    <p class="cs-next-desc">Designing the governance layer for enterprise AI infrastructure, from zero conventions to acquisition in under a year.</p>
+    <a href="mcp-manager.html" class="cs-next-link">Read MCP Manager case study →</a>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Jonathan Slavuter</span>
+  <a href="mailto:jslavuter@gmail.com">jslavuter@gmail.com</a>
+</footer>
+
+</body>
+</html>

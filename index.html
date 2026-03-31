@@ -1,495 +1,96 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonathan Slavuter — Staff Designer</title>
+  <meta name="description" content="Staff Designer specializing in AI infrastructure, developer tools, and enterprise platforms. Based in New York City.">
+  <link rel="stylesheet" href="style.css">
+  <script>if(sessionStorage.getItem("js_auth")!=="1"){var r=encodeURIComponent(location.pathname.split("/").pop());location.replace("login.html?r="+r);}</script>
+</head>
+<body>
 
-<html>
-	<head>
-		<title>Jonathan Slavuter's UX Design Portfolio</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="User Experience & Product Design portfolio by Jonathan Slavuter." />
-		<meta name="keywords" content="UX Design Web Mobile Wireframe Prototype Sitemap Mockup Portfolio Jonathan Slavuter Contact" />
-		<link rel="shortcut icon" href="images/favicon.ico" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="css/skel-noscript.css?ver=2.1" />
-		<link rel="stylesheet" href="css/style.css?ver=2.1" />
-		<link rel="stylesheet" href="css/style-wide.css?ver=2.1" />
-		<link rel="stylesheet" href="css/pure-drawer.min.css?ver=2.1" />
-		<link rel="stylesheet" href="css/main.css?ver=2.1" />
-		<link rel="stylesheet" href="css/ie9.css?ver=2.1" />
-		<link rel="stylesheet" href="css/ie8.css?ver=2.1" />
-    
-    <!-- Favicons-->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-	</head>
+<nav>
+  <a href="index.html" class="nav-logo">JS</a>
+  <ul class="nav-links">
+    <li><a href="mcp-manager.html" class="nav-link-hide">MCP Manager</a></li>
+    <li><a href="visor.html" class="nav-link-hide">Visor</a></li>
+    <li><a href="about.html" class="nav-link-hide">About</a></li>
+    <li><a href="jonathan_slavuter_resume.pdf" target="_blank" class="nav-cta">Resume ↗</a></li>
+  </ul>
+</nav>
 
-	<body>
+<section class="hero">
+  <p class="hero-eyebrow">Staff Designer · New York City</p>
+  <h1 class="hero-name">Jonathan Slavuter</h1>
+  <p class="hero-sub">10+ years designing complex enterprise tools and developer platforms. Currently leading design for MCP Manager (AI infrastructure for connecting agents to organizational data at scale).</p>
+  <div class="hero-rule"></div>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Currently</span>
+      <span class="hero-meta-value">Staff Designer, Usercentrics</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Previously</span>
+      <span class="hero-meta-value">Head of Product Design, Visor</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Location</span>
+      <span class="hero-meta-value">New York City</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">LinkedIn</span>
+      <span class="hero-meta-value"><a href="https://linkedin.com/in/jslavuter" target="_blank">linkedin.com/in/jslavuter</a></span>
+    </div>
+  </div>
+</section>
 
+<div class="page-content">
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBRJG57VK4"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+  <section class="work">
+    <p class="section-label">Selected work</p>
+    <div class="work-grid">
 
-	  gtag('config', 'G-HBRJG57VK4');
-	</script>
+      <a href="mcp-manager.html" class="case-card">
+        <span class="case-card-year">2025–Present</span>
+        <h2 class="case-card-title">MCP Manager</h2>
+        <p class="case-card-role">Staff Designer · Visor / Usercentrics · Acquired Jan 2026</p>
+        <p class="case-card-desc">MCP Manager is enterprise infrastructure for connecting AI agents to organizational data at scale. I designed it from scratch in a space with no established conventions, and it was acquired in under a year.</p>
+        <span class="case-card-cta">Read case study →</span>
+      </a>
 
-	<!-- Header -->
-	<div id="header" class="skel-panels-fixed">
+      <a href="visor.html" class="case-card">
+        <span class="case-card-year">2021–2025</span>
+        <h2 class="case-card-title">Visor</h2>
+        <p class="case-card-role">Head of Product Design · Rocketvisor · Lead → Principal → Head</p>
+        <p class="case-card-desc">A self-initiated design intervention (the View Orientation Bar) that began as a simple grounding affordance and ended with a new app architecture, a new visual language, and a 4× improvement on activation metrics.</p>
+        <span class="case-card-cta">Read case study →</span>
+      </a>
 
-		<div class="top">
-			<!-- Logo -->
-			<div id="logo">
-				<span class="image full"><img src="images/js_logo.svg" alt="Logo" /></span>
-			</div>
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="#welcomeSection" id="welcomeSection-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Welcome</span></a></li>
-					<li><a href="#portfolioSection" id="portfolioSection-link" class="skel-panels-ignoreHref"><span class="fa fa-th">My Work</span></a></li>
-					<li><a href="#contactSection" id="contactSection-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
-					<li><a href="https://www.jonathanslavuter.com/images/resume---jonathan-slavuter.pdf" target="_blank" class="skel-panels-ignoreHref"/><span class="fa fa-briefcase">Resume</span></a></li>
-				</ul>
-			</nav>
-		</div>
+    </div>
+  </section>
 
-		<div class="bottom">
+  <div class="about">
+    <h2 class="about-heading">Interesting work rarely comes with a playbook.</h2>
+    <div>
+      <div class="about-body">
+        <p>I build design systems, ship features in code, and stay close to the models. My background spans enterprise SaaS, developer tooling, and AI infrastructure, with a consistent thread of turning complex, low-convention problems into scalable, opinionated product.</p>
+        <p>I work regularly with Claude, Replit, and v0. Comfortable at the IC/Staff level working directly with engineering and product without a design org underneath me.</p>
+      </div>
+      <div class="about-links">
+        <a href="mailto:jslavuter@gmail.com" class="about-link">jslavuter@gmail.com</a>
+        <a href="https://linkedin.com/in/jslavuter" target="_blank" class="about-link">LinkedIn</a>
+        <a href="jonathan_slavuter_resume.pdf" target="_blank" class="about-link">Resume ↗</a>
+      </div>
+    </div>
+  </div>
 
-			<!-- Social Icons -->
-				<ul class="icons">
-					<!-- <li><a href="http://www.be.net/ultimatessjoten6deb/" target="_blank" class="fa behance solo"><span>Behance</span></a></li> -->
-					<li><a href="https://www.linkedin.com/in/jonathan-slavuter/" target="_blank" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
-					<!-- <li><a href="https://twitter.com/JSlavuter" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li> -->
-				</ul>
+</div>
 
-		</div>
+<footer>
+  <span>© 2026 Jonathan Slavuter</span>
+  <a href="mailto:jslavuter@gmail.com">jslavuter@gmail.com</a>
+</footer>
 
-	</div>
-
-	<!-- Main -->
-	<div id="main">
-
-		<!-- Intro -->
-		<section id="welcomeSection">
-			<div class="container">
-				<header><h2 class="alt">hello there.</h2></header>
-				<p>My name is Jonathan. I'm a UX Designer based out of New York City. I specialize in data-heavy applications and architect beautiful solutions for complex systems. I have an interdisciplinary background in tech, art &amp; psychology.</p>
-				<p>Please take a look at some of my work.</p>
-				<a href="#portfolioSection" class="scrolly"><div class="downArrow jiggle"></div></a>
-			</div>
-		</section>
-
-		<!-- Quote Break -->
-		<div id='motiveBanner'>
-			<i>Everything is designed. Few things are designed well.</i><br/>
-			<i>- Brian Reed</i>
-		</div>
-
-		<!-- Portfolio Thumbs -->
-		<section id="portfolioSection">
-			<div class="container">
-				<div class="row">
-					
-					<!-- Conductor - Visibility Comparisons -->
-					<div class="4u">
-						<article class="item block-ad">
-							<a class="image full scrolly">
-								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-									<div class="hover-info">View case study</div>
-									<img src="images/thumbs/thumb---conductor-enterprise-reporting.png" alt="Conductor: Enterprise Reporting project thumbnail">
-								</label>
-							</a>
-							<!-- <div class="thumbnail-blurb">Web presence management</div> -->
-						</article>
-					</div>
-
-					<!-- Conductor - Result Types -->
-					<div class="4u">
-						<article class="item block-ad">
-							<a class="image full scrolly">
-								<label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-									<div class="hover-info">View case study</div>
-									<img src="images/thumbs/thumb---conductor-result-types.png" alt="Conductor: Result Types project thumbnail">
-								</label>
-							</a>
-							<!-- <div class="thumbnail-blurb">Web presence management</div> -->
-						</article>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<!-- Contact -->
-		<section id="contactSection">
-			<div class="container">
-				<header><h2 class="alt">Contact</h2></header>
-				<p>You can always reach me at <a class="green_email" href="mailto:jslavuter@gmail.com">jslavuter@gmail.com</a>, promise.</p>
-			</div>
-		</section>
-	</div>
-
-	<!-- Portfolio -->
-	<div class="pure-container" data-effect="pure-effect-slide">
-		<input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
-		<div class="pure-drawer" data-position="right">
-			<label class="close-button pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
-				<p><i class="fa fa-times"></i></p>
-			</label>
-			<div id="portContainer">
-
-				<!-- Conductor - Enterprise Reporting -->
-				<div class="portCenter">
-					<section class="hero-image-container" id="conductor-bg">
-						<img src="images/conductor/enterprise-reporting/logogram---conductor-enterprise-reporting.svg" class="logoImage" id="conductor-result-types-logo" alt="conductor logo image">
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>The Opportunity</h3>
-								<p>Thousands of brands and enterprise marketers use Conductor’s cloud-based SEO platform to manage their search visibility and the performance of their web content. When it comes to enterprise reporting, our users needed a quick and easy way to view reporting insights for multiple brands across different search engines, locations, and devices.</p>
-								<h3>Goals</h3>
-								<p style="margin-bottom: 0">Create a comparison reporting tool to help users in two ways: 
-									<ol style="color: #666666">
-										<li>1) Provide a bird’s-eye view of their website’s visibility in search results</li>
-										<li>2) Surface relevant insights  to help marketers increase site traffic</li>
-									</ol>
-								</p>
-							</div>
-						</div>
-					</section>
-					<!-- <section class="ux-sample-description" id="feature-video">
-						<div class="one-col">
-							<video autoplay="autoplay" loop controls id="myVideo">
-
-						    <source src="images/conductor/enterprise-reporting/visibility-comparisons---preview.mp4" type="video/mp4">
-
-							    Sorry, your browser doesn't support embedded videos.
-							</video>
-						</div>
-					</section> -->
-					<section class="ux-sample-description-green">
-						<div class="one-col">
-							<div>
-								<h3>Project Details at a Glance</h3>
-								<table>
-									<tr>
-										<th class="details-subhead">Timeline</th>
-									</tr>
-									<tr>
-										<td>3 months</td>
-									</tr>
-								</table>
-								<table>
-									<tr>
-										<th class="details-subhead">Tools</th>
-									</tr>
-									<tr>
-										<td>Zendesk, Airtable, Sketch, Zeplin, and Gong</td>
-									</tr>
-								</table>
-								<table>
-									<tr>
-										<th class="details-subhead">Activities</th>
-									</tr>
-									<tr>
-										<td>Research, Conceptual Design, Validation Testing, Detail Design, Usability Testing, and Documentation</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Problem</h3>
-								<p>How do you prioritize your SEO and content marketing efforts for multiple brands with individual websites, accessed by millions of users across different search engines, locations, and devices?</p><br>
-							</div><hr class="horizontal-rule">
-							<img src="images/conductor/enterprise-reporting/enterprise-reporting---workflow---legacy.png" class="portfolio-image-asset">
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>User Insights</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---zendesk-and-airtable.svg" class="zendesk-airtable-logo">
-								<p><strong>Assessing pain points in the workflow.</strong> It starts with the user. Configuring and saving lots of similar reports is a very time-consuming and repetitive process. We started by conducting several user inquiries and scouring through product feedback. Our findings were that users had two major pain-points that we needed to address:</p>
-								<ol style="color: #666666">
-									<li>1) They wanted to see tracked keyword data across multiple domains, search engines, locations, and devices to understand the landscape of their website’s overall visibility.</li>
-									<li>2) They wanted simple insights from this data that helped them to prioritize their website optimization efforts.</li>
-								</ol>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Design Process</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---sketch-app.svg" class="sketch-logo">
-								<p>Working with the product manager, I outlined a two-pronged approach to meet our users needs:<br><br>
-									<strong>1)</strong> We could enhance the primary Keyword Performance feature to support multiple context reporting. This feature allows customers to deep dive into analysis on the visibility of individual keywords they're tracking for their website. By adding multiple context reporting, enterprise users would be able to aggregate and filter their visibility data across a range of dimensions.
-									<img src="images/conductor/enterprise-reporting/keyword-performance-roll-up.gif" class="portfolio-image-asset" id="keyword-performance-roll-up"><br><br>
-									<strong>2)</strong> We create a visibility comparisons feature, which would allow users to apply various contextual lenses on their keywords to surface summary level insights about which contexts to prioritize their efforts on.
-									<img src="images/conductor/enterprise-reporting/visibility-comparisons---outline.png" class="portfolio-image-asset" id="visibility-comparisons-outline">
-								</p>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>Conceptual design</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---sketch-app.svg" class="sketch-logo">
-								<p>After reviewing product feedback, we noted that our users vocalized a need to better understand their website visibility and optimization priorities based on location. Location is one of the most important reporting attributes for enterprise customers. Their websites receive millions of visitors from a variety of locations and they spend a great deal of effort optimizing their website content based on each one.<br><br>
-
-								This spurred several rounds of design concepts and feedback sessions. I experimented with reporting on various metrics (monthly search volume, number of local results, top ranking results, count of volatile keywords, market share). I also tested different data visualizations to better understand how the user would effectively process and act on this information.<br><br>
-								</p>
-								<img src="images/conductor/enterprise-reporting/visibility-comparisons---concepts.gif" class="portfolio-image-asset" id="visibility-comparisons-outline">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>User Feedback</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---gong-io.svg" class="gong-io-logo">
-								<p>Conducting validation with the customer service team and customers led to the following insights:</p>
-								<ul class="bullet-dark-bg">
-									<li>Surface a snapshot of best / worst performing locations, based on market share</li>
-									<li>Map out locations with the largest changes in market share</li>
-									<li>Allow users to drill into specific locations</li>
-									<li>Provide suggested workflows to optimize their location-based content</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>Results and Key Learnings</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---sketch-and-zeplin.svg" class="sketch-zeplin-logo">
-								<ol style="color: #666666">
-									<li>1) The primary Keyword Performance feature designed to support multiple context reporting has been deployed to a closed beta cohort. I am providing development support on testing and adjusting the design based on initial feedback.</li><br>
-									<!-- <blockquote>
-										This feature ROCKS.
-									</blockquote><br> -->
-									<li>2) The visibility comparison feature is slated to be deployed in early 2020. It will serve as the prototype for comparison reporting across locations along with a variety of additional dimensions, including domain, search engine, device type, and keyword category.<br><br>
-										<strong>Have a clear direction.</strong> I designed this feature to deliver an executive level overview of location-based performance. Users will see immediate insights on optimization opportunities based on location, how performance changes over time, deep-dive into workflows, and combine various filter contexts to fine tune optimization efforts.</li>
-								</ol>
-								<img src="images/conductor/enterprise-reporting/visibility-comparisons---final.png" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-				</div>
-
-				<!-- Conductor - Result Types -->
-				<div class="portCenter">
-					<section class="hero-image-container" id="conductor-bg">
-						<img src="images/conductor/result-types/logogram---conductor-result-types.svg" class="logoImage" id="conductor-result-types-logo" alt="conductor logo image">
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>The Opportunity</h3>
-								<p>Thousands of brands and enterprise marketers use Conductor’s platform to manage their search visibility in search results and the performance of their web content. However, as search engines like Google evolve from ten blue links to more dynamic content, our users needed deeper insights on how they were showing up in results. For example, when and where are <a href="https://www.google.com/search?q=cat+videos" target="_blank">videos</a> or <a href="https://www.google.com/search?q=pizza+around+me" target="_blank">local results</a> appearing? As designer on this project, I set out to optimize our reporting capabilities to give marketers deeper insights around their performance.</p>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-green">
-						<div class="one-col">
-							<div>
-								<h3>Project Details at a Glance</h3>
-								<table>
-									<tr>
-										<th class="details-subhead">Timeline</th>
-									</tr>
-									<tr>
-										<td>4 months</td>
-									</tr>
-								</table>
-								<table>
-									<tr>
-										<th class="details-subhead">Tools</th>
-									</tr>
-									<tr>
-										<td>Zendesk, Airtable, Sketch, Gong, Axure, Pendo, and Heap</td>
-									</tr>
-								</table>
-								<table>
-									<tr>
-										<th class="details-subhead">Activities</th>
-									</tr>
-									<tr>
-										<td>Research, Conceptual Design, Validation Testing, Detail Design, Usability Testing, Documentation, and Acceptance Testing</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Problem</h3>
-								<p>Previously known as Content Types, this feature surfaced information on how results appeared in search results. It was a good starting point, but there were data gaps (no information on result type ownership), and the design was stale.</p>
-								<img src="images/conductor/result-types/content-types.gif" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>User Insights</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---zendesk-and-airtable.svg" class="zendesk-airtable-logo">
-								<p ><strong>Gathering and prioritizing product feedback.</strong> Understanding the layout of a search results page wasn't enough information for our users - they needed to understand where they owned various stand-out features on search results. We conducted several user inquiries and reviewed product feedback. Our findings indicated that users had four pain-points that we needed to address:</p>
-								<ol style="color: #666666">
-									<li>1) SEOs & Content Marketers asked which result types appeared for keywords they cared about.</li>
-									<li>2) SEOs & Content Marketers asked which result types appeared more / less over time.</li>
-									<li>3) SEOs asked what their domain's ownership of appearing result types was.</li>
-									<li>4) Content Marketers asked which appearing result types they didn't own.</li>
-								</ol>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Design Process</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---sketch-app.svg" class="sketch-logo">
-								<p>I started out by outlining what information would be most valuable to surface to users, and considered how best to build the right story. Continuing to offer summary level information, along with trending and detailed insights at a keyword level was crucial to the success of this report. I also saw an opportunity to provide additional touchpoints to drive users towards additional research and content optimization workflows.</p>
-								<img src="images/conductor/result-types/result-types-concept-outline.png" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>Conceptual Design</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---sketch-app.svg" class="sketch-logo">
-								<p>Over the next month, I went through the process of iterating and soliciting feedback on design concepts. I experimented with varying our information architecture, highlighting only the highest performing result types, allowing users to focus on a single result type and trending it over time, and displaying ownership data for each result type independently (as well as comparatively for multiple result types.)</p>
-								<img src="images/conductor/result-types/result-types-iterations.gif" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Validation takeaways</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---gong-io.svg" class="gong-io-logo">
-								<p>After several rounds of testing, my participants left me with a clear direction on enhancing this feature. We needed to make it simple to understand all result types by providing the following functionality:</p>
-								<ul class="bullet-dark-bg">
-									<li>Summarize all result types, including appearance and ownership</li>
-									<li>Support workflows to deep-dive on a result type</li>
-									<li>Trend individual result types, comparing appearance and ownership</li>
-									<li>Provide granular reporting on result type ownership at a keyword level</li>
-									<li>Educate novice users on each supported result type</li>
-									<li>Modernize the visual design of the feature and rename it to "Result Types"</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>A new starting point</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---axure.svg" class="axure-logo">
-								<p>I added a summary widget to support information on all result types - gone were the days where users had limited summary information. This allowed the user to quickly glance across all result types, and immediately understand where they should prioritize their efforts. Additionally, users could now see their ownership for each result type, in a snapshot, and trended out over time. And lastly, users could now deep-dive into analysis workflows for each individual result type and link into additional reports to optimize their content and target result type opportunities.</p>
-								<img src="images/conductor/result-types/result-types-summary.gif" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Multi-modal trends</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---axure-alt.svg" class="axure-logo-alt">
-								<p>Understanding ownership trends informs users about the search landscape. For businesses interested in educating their customers - this report could now help them determine what kinds of content their known competitors were creating. In doing so, they could fine tune their marketing efforts to create better targeted educational content, increasing the likelihood of them appearing at the top of the search page. Incorporating a view to focus on individual result types to see how result type ownership changes was vital.</p>
-								<img src="images/conductor/result-types/result-types-trend.gif" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>Granular data</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---axure.svg" class="axure-logo">
-								<p>The table widget was updated to support those users that needed to see appearance and their ownership of result types. Additionally, users could now view contextual details about each keyword - like top rankers, and whether competitors owned any results. And lastly, users could now drill into the Keyword Details and Page Insights features, closing the loop on their execution workflows.</p>
-								<img src="images/conductor/result-types/result-types-table.gif" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Bubbling up education</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---pendo.svg" class="pendo-logo">
-								<p>For those users that need some additional information on result types, I wanted to bring our knowledge base to the forefront. I coded a custom a set of contextually accessible educational guides - supporting our less seasoned users to maximize the value of this feature.</p>
-								<img src="images/conductor/result-types/result-types-education.gif" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description">
-						<div class="one-col">
-							<div>
-								<h3>Results</h3>
-								<p class="ux-tools">Tools used:</p>
-								<img src="images/tools/logo---heap.svg" class="heap-logo">
-								<p>After a successful beta and eventual GA release, this feature saw a jump in user engagement by approximately 100%. Today, this feature is frequently used by the majority of our users.
-								<br><br><a href="https://www.conductor.com/blog/2018/11/google-result-types/" target="_blank">Check out the feature highlight on Conductor's blog</a>
-								</p>
-								<img src="images/conductor/result-types/result-types-engagement.png" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-					<section class="ux-sample-description-alt">
-						<div class="one-col">
-							<div>
-								<h3>Key Learnings</h3>
-								<p>Understanding the search landscape and the level of content visibility therein is a difficult process. Search is constantly evolving, new mechanisms are being implemented at incredible speeds, and the search results page is a dynamic, often difficult to define space. My goal was to ensure that our users could not only understand its layout, but get deeper insights into how they appear there. Search results essentially reflect what the best answer is to a posited question.
-								
-								<br><br>What I have learned is that by educating users in context, providing the right fidelity of information to support their research needs, and helping them execute on their optimization goals - they'll not only become more efficient, but will ultimately provide more value to their customers.
-								
-								<hr class="in-section-divider-dark-bg">
-
-								<br>In the meantime, I'm working on a concept to support reporting on multiple contexts, while exploring a streamlined visual design.</p>
-								<img src="images/conductor/result-types/mockup---result-types.png" class="portfolio-image-asset">
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</div>
-		<label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
-	</div>
-
-	<!-- Footer -->
-	<div id="footer">
-
-		<!-- Copyright -->
-		<div class="copyright">
-			<p>&copy; Jonathan Slavuter - Copyright 2021</p>
-		</div>
-	</div>
-	</body>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-panels.min.js"></script>
-	<script src="js/init.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/html5shiv.js"></script>
+</body>
 </html>
