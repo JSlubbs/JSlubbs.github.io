@@ -31,7 +31,7 @@
     </div>
     <div class="cs-stat">
       <p class="cs-stat-label">Problem</p>
-      <p class="cs-stat-value">Organizations had no clear way to govern AI agent access to tools and servers at scale</p>
+      <p class="cs-stat-value">Organizations had no clear way to govern AI agent access at scale</p>
     </div>
     <div class="cs-stat">
       <p class="cs-stat-label">Approach</p>
@@ -48,10 +48,8 @@
   <div class="cs-section-inner">
     <p class="cs-section-label">Overview</p>
     <h2 class="cs-h2">Not how to use MCP — how to manage it across an organization.</h2>
-    <p class="cs-p">In early 2025, as MCP emerged as a new standard, Visor pivoted to a more pressing problem: not how to use MCP, but how to manage it across an organization.</p>
-    <p class="cs-p">Once multiple teams, servers, and agents are involved, the challenge becomes governance. Who approved a connection? Which teams can access which servers? What happens when an agent behaves unexpectedly?</p>
-    <p class="cs-p">I designed MCP Manager from scratch to answer those questions. The product had to work for two groups with very different needs: administrators who need visibility and control, and developers who want the system to disappear into the background.</p>
-    <p class="cs-p">There was no clear playbook for this category. No mature research base, few comparable products, and a fast-moving market. Validation came through internal dogfooding, rapid iteration, and direct feedback from early customers in a formal alpha program.</p>
+    <p class="cs-p">As MCP emerged in early 2025, Visor saw a bigger opportunity: governance. The challenge was no longer how to use MCP, but how to manage it once multiple teams, servers, and agents were involved. Organizations needed a way to control access, track approvals, and understand what was happening across the system without slowing developers down.</p>
+    <p class="cs-p">I designed MCP Manager from scratch to meet that need. As the sole designer, I was responsible for defining the product from the ground up: shaping the core mental model, designing the system for both administrators and developers, and helping turn an ambiguous new category into something usable, legible, and trustworthy.</p>
   </div>
 </div>
 
@@ -79,7 +77,8 @@
       <li>People, Policies, and Logs as the governance layer around them</li>
     </ul>
     <p class="cs-p">This structure gave administrators a way to reason about the system without forcing developers into unnecessary complexity.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Welcome screen — entity relationship diagram</span></div>
+    <img src="images/welcome-screen.png" alt="MCP Manager welcome screen showing entity relationship diagram of AI apps, gateways, MCP servers, and users" class="cs-img">
+    <p class="cs-img-caption">Welcome screen — system model overview</p>
 
     <h3 class="cs-h3">Information architecture built around two user needs</h3>
     <p class="cs-p">The navigation reflected the tension between speed and control. I organized the product into four layers:</p>
@@ -96,8 +95,8 @@
     <p class="cs-p">One of the most important product decisions was how to represent gateways.</p>
     <p class="cs-p">A gateway is valuable because it makes complexity disappear for developers. An app connects once and can then access multiple MCP servers through a single layer of orchestration. The developer does not need to configure every connection individually or even know which systems were involved.</p>
     <p class="cs-p">That meant the UI had to communicate two truths at once: administrators need to understand and control this layer, and developers should barely have to think about it.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">MCP Servers — empty state</span></div>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">MCP Servers — populated list</span></div>
+    <img src="images/gateway-configuration.png" alt="Gateway configuration screen showing connection URL, assigned MCP servers, team access, and audit history" class="cs-img">
+    <p class="cs-img-caption">Gateway configuration — connection URL, assigned servers, team access, and logs</p>
 
     <h3 class="cs-h3">A workable model for local connections</h3>
     <p class="cs-p">Local MCP servers require tunnels, which can easily become messy in the UI.</p>
@@ -116,13 +115,12 @@
     <p class="cs-p">A good example is the annotation chip system.</p>
     <p class="cs-p">Tool annotations needed to communicate three distinct states: known true, known false, and unknown. This was not just a visual distinction. Each state changed how an administrator would interpret a tool's behavior and risk.</p>
     <p class="cs-p">That same work later supported a more advanced condition builder. What began as simple attribute matching evolved into annotation-aware governance, where admins could create rules like "allow tools where Destructive is false" instead of relying only on name-based matching. This shifted the product from basic filtering toward semantic governance.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Annotation chips — three-state system (known true, known false, unknown)</span></div>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Condition builder — Phase 1 (attribute-based)</span></div>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Condition builder — Phase 3 (annotation-aware)</span></div>
+    <img src="images/annotation-aware-condition-builder.png" alt="Annotation-aware condition builder showing tool provisioning table with Read-only, Destructive annotations and a condition popover with true/false/unknown states" class="cs-img">
+    <p class="cs-img-caption">Annotation-aware condition builder — semantic governance by annotation state</p>
 
     <h3 class="cs-h3">Navigation patterns for a growing product</h3>
     <p class="cs-p">As the configuration model became deeper, I introduced a breadcrumb and page-header pattern to support gateway-scoped views and deeper admin workflows. That pattern became the standard navigation model for more complex configuration paths.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Design system — Components overview</span></div>
+
   </div>
 </div>
 
