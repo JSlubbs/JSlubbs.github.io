@@ -564,3 +564,31 @@ footer a:hover { color: var(--text-light); }
   .cs-stat { border-right: none; border-bottom: 1px solid var(--border-dark); padding: 20px 0 !important; }
   .cs-stat:last-child { border-bottom: none; }
 }
+
+/* ─── BEFORE / AFTER ─────────────────────────────────────────────── */
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin: 28px 0;
+}
+
+.before-after-col {
+  background: var(--surface);
+  padding: 24px 28px;
+}
+
+.before-after-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .before-after { grid-template-columns: 1fr; }
+}

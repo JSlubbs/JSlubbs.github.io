@@ -6,6 +6,7 @@
   <title>About — Jonathan Slavuter</title>
   <meta name="description" content="Staff Designer based in New York City. Background in enterprise SaaS, developer tooling, and AI infrastructure.">
   <link rel="stylesheet" href="style.css">
+  <script>if(sessionStorage.getItem("js_auth")!=="1"){var r=encodeURIComponent(location.pathname.split("/").pop());location.replace("login.html?r="+r);}</script>
   <style>
     .bio-hero {
       background: var(--dark);
@@ -16,140 +17,40 @@
       gap: 80px;
       align-items: end;
     }
-
-    .bio-photo-wrap {
-      display: flex;
-      justify-content: flex-end;
-    }
-
+    .bio-photo-wrap { display: flex; justify-content: flex-end; }
     .bio-photo {
-      width: 280px;
-      height: 280px;
-      border-radius: 4px;
-      background: var(--dark-2);
-      border: 1px solid var(--border-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-faint);
+      width: 280px; height: 280px; border-radius: 4px;
+      background: var(--dark-2); border: 1px solid var(--border-dark);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-faint);
     }
-
-    .bio-intro-eyebrow {
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-faint);
-      margin-bottom: 20px;
-    }
-
-    .bio-intro-name {
-      font-family: var(--font-display);
-      font-size: clamp(40px, 6vw, 72px);
-      font-weight: 300;
-      font-style: italic;
-      letter-spacing: -0.01em;
-      line-height: 1;
-      margin-bottom: 24px;
-    }
-
-    .bio-intro-role {
-      font-size: 15px;
-      font-weight: 300;
-      color: var(--text-faint);
-      line-height: 1.65;
-      max-width: 460px;
-    }
+    .bio-intro-eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 20px; }
+    .bio-intro-name { font-family: var(--font-display); font-size: clamp(40px, 6vw, 72px); font-weight: 300; font-style: italic; letter-spacing: -0.01em; line-height: 1; margin-bottom: 24px; }
+    .bio-intro-role { font-size: 15px; font-weight: 300; color: var(--text-faint); line-height: 1.65; max-width: 460px; }
 
     .bio-section {
       padding: 28px 48px;
       background: var(--surface);
     }
-
-    .bio-section-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
+    .bio-section-inner { max-width: 720px; margin: 0 auto; }
     .bio-hero + .bio-section { padding-top: 56px; }
     .bio-section:has(+ footer) { padding-bottom: 56px; }
 
-    .bio-section-label {
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 18px;
-      font-weight: 500;
-    }
+    .bio-section-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 18px; font-weight: 500; }
+    .bio-h2 { font-family: var(--font-display); font-size: clamp(22px, 3vw, 32px); font-weight: 400; letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 20px; color: var(--text); }
+    .bio-p { font-size: 15px; font-weight: 300; line-height: 1.8; margin-bottom: 18px; color: #3E3E3A; }
 
-    .bio-h2 {
-      font-family: var(--font-display);
-      font-size: clamp(22px, 3vw, 32px);
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      color: var(--text);
-    }
+    .bio-interests { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 24px 0; }
+    .bio-interest { background: var(--white); padding: 20px 24px; }
+    .bio-interest-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; font-weight: 500; }
+    .bio-interest-value { font-size: 14px; font-weight: 400; color: var(--text); line-height: 1.4; }
 
-    .bio-p {
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.8;
-      margin-bottom: 18px;
-      color: #3E3E3A;
-    }
+    .bio-approach { list-style: none; margin: 16px 0 0; display: flex; flex-direction: column; gap: 8px; }
+    .bio-approach li { font-size: 14px; font-weight: 300; color: #3E3E3A; padding-left: 20px; position: relative; }
+    .bio-approach li::before { content: "·"; position: absolute; left: 0; color: var(--text-muted); }
 
-    .bio-interests {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin: 24px 0;
-    }
-
-    .bio-interest {
-      background: var(--white);
-      padding: 20px 24px;
-    }
-
-    .bio-interest-label {
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-      font-weight: 500;
-    }
-
-    .bio-interest-value {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--text);
-      line-height: 1.4;
-    }
-
-    .bio-links {
-      display: flex;
-      gap: 24px;
-      margin-top: 28px;
-    }
-
-    .bio-link {
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(43,122,100,0.22);
-      padding-bottom: 2px;
-      transition: border-color 0.2s;
-    }
-
+    .bio-links { display: flex; gap: 24px; margin-top: 28px; }
+    .bio-link { font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(43,122,100,0.22); padding-bottom: 2px; transition: border-color 0.2s; }
     .bio-link:hover { border-color: var(--accent); }
 
     @media (max-width: 900px) {
@@ -158,12 +59,8 @@
       .bio-section { padding: 48px 24px; }
       .bio-interests { grid-template-columns: 1fr 1fr; }
     }
-
-    @media (max-width: 600px) {
-      .bio-interests { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 600px) { .bio-interests { grid-template-columns: 1fr; } }
   </style>
-  <script>if(sessionStorage.getItem("js_auth")!=="1"){var r=encodeURIComponent(location.pathname.split("/").pop());location.replace("login.html?r="+r);}</script>
 </head>
 <body>
 
@@ -181,7 +78,7 @@
   <div>
     <p class="bio-intro-eyebrow">Staff Designer · New York City</p>
     <h1 class="bio-intro-name">Jonathan Slavuter</h1>
-    <p class="bio-intro-role">Designer with 10+ years across enterprise SaaS, developer tooling, and AI infrastructure. Currently Staff Designer at Usercentrics, leading design for MCP Manager.</p>
+    <p class="bio-intro-role">Designer with 10+ years of experience across enterprise SaaS, developer tools, and AI infrastructure. Currently Staff Designer at Usercentrics, leading design for MCP Manager.</p>
   </div>
   <div class="bio-photo-wrap">
     <div class="bio-photo">Photo</div>
@@ -190,20 +87,29 @@
 
 <div class="bio-section">
   <div class="bio-section-inner">
-    <p class="bio-section-label">Background</p>
-    <h2 class="bio-h2">The work has always been about making complexity legible.</h2>
-    <p class="bio-p">I started in consulting, doing UX across fintech, healthcare, and industrial clients. Then enterprise SEO at Conductor, where I got comfortable with dense data, large systems, and research-driven product work. Then Visor, where I was the only designer for four years and built everything from a nearly blank Figma file.</p>
-    <p class="bio-p">The through-line has been low-convention problems: spaces where the design patterns don't exist yet and the work is partly figuring out what the right questions are. That's what drew me to MCP Manager, and it's what drew me to apply here.</p>
-    <p class="bio-p">I have a B.A. in Psychology from Baruch College (CUNY), which turns out to be a surprisingly useful foundation for design work. Understanding how people build mental models, where attention goes, what makes an interface feel trustworthy or confusing — a lot of that is just applied cognitive psychology.</p>
+    <p class="bio-section-label">Overview</p>
+    <h2 class="bio-h2">I focus on making complex systems easier to understand and control.</h2>
+    <p class="bio-p">Most of my work sits in areas where there are no clear patterns yet. The job is not just designing the interface, but figuring out how the system should work in the first place.</p>
   </div>
 </div>
 
 <div class="bio-section">
   <div class="bio-section-inner">
-    <p class="bio-section-label">How I work</p>
-    <h2 class="bio-h2">Close to the models, close to the code.</h2>
-    <p class="bio-p">I work regularly with Claude, Replit, and v0. I'm interested in what it means to design for and with AI systems, not just to make interfaces that sit in front of them. MCP Manager is a good example: the interesting design problem isn't the UI, it's the mental model. How do you make an invisible infrastructure layer visible and governable without overwhelming the people who have to use it?</p>
-    <p class="bio-p">I prototype in code when it's faster than Figma. I maintain my own design system files alongside the products I build. I ship documentation and specs that don't require me to be in the room.</p>
+    <p class="bio-section-label">Background</p>
+    <h2 class="bio-h2">The through-line is taking unfamiliar problems and turning them into products people can understand and trust.</h2>
+    <p class="bio-p">I've spent most of my career designing products that are powerful, complex, and not always easy to make intuitive.</p>
+    <p class="bio-p">At Conductor, I worked on enterprise SEO tools. At Visor, I was the sole designer for several years and helped shape the company's move into AI infrastructure. I later led design for MCP Manager, which helped position the company for acquisition by Usercentrics.</p>
+    <p class="bio-p">I have a B.A. in Psychology from Baruch College (CUNY) — a more useful foundation for design work than it might sound.</p>
+  </div>
+</div>
+
+<div class="bio-section">
+  <div class="bio-section-inner">
+    <p class="bio-section-label">How I Work</p>
+    <h2 class="bio-h2">I stay close to both the product and the underlying systems.</h2>
+    <p class="bio-p">I work regularly with Claude, Replit, and v0, and I use code when it is the fastest way to test ideas. I am interested in designing for AI systems directly, not just building interfaces around them.</p>
+    <p class="bio-p">On MCP Manager, the core problem was not visual design. It was making an invisible system understandable and controllable. That is the kind of problem I tend to focus on.</p>
+    <p class="bio-p">I build and maintain design systems alongside the products I work on. I write specs and documentation that make it easy for teams to move without needing constant design involvement.</p>
 
     <div class="bio-interests">
       <div class="bio-interest">
@@ -212,11 +118,11 @@
       </div>
       <div class="bio-interest">
         <p class="bio-interest-label">Approach</p>
-        <p class="bio-interest-value">Narrative-first, systems-minded, bias toward shipping</p>
+        <p class="bio-interest-value">Systems-minded · Clear structure over clever UI · Bias toward shipping</p>
       </div>
       <div class="bio-interest">
         <p class="bio-interest-label">Background</p>
-        <p class="bio-interest-value">Enterprise SaaS, developer tooling, AI infrastructure</p>
+        <p class="bio-interest-value">Enterprise SaaS, developer tools, AI infrastructure</p>
       </div>
     </div>
   </div>
@@ -224,10 +130,10 @@
 
 <div class="bio-section">
   <div class="bio-section-inner">
-    <p class="bio-section-label">Outside work</p>
+    <p class="bio-section-label">Outside Work</p>
     <h2 class="bio-h2">Other things that take up space.</h2>
-    <p class="bio-p">I bike and hike a lot. I travel whenever I can, usually with friends. I read broadly — history, philosophy, fiction, whatever I can get into at the moment. I listen to a lot of podcasts, mostly long-form interviews and anything that covers ideas seriously.</p>
-    <p class="bio-p">I'm actively learning languages: five at varying degrees of competence — Russian (my first language, though I've lost much of it), English, Spanish, Portuguese, and Japanese. The last two are the humbling ones. Learning languages for me is partly about the language and partly about the thinking patterns that come with it. Different grammars encode the world differently. It's hard not to notice that once you've lived inside a few of them.</p>
+    <p class="bio-p">I spend a lot of time outdoors, biking and hiking when I can. I travel frequently and read across a mix of history, philosophy, and fiction.</p>
+    <p class="bio-p">I am also learning languages. Russian is my first language, though I've lost much of it. I speak English, and I am currently working on Spanish, Portuguese, and Japanese — the last two being the humbling ones.</p>
 
     <div class="bio-links">
       <a href="mailto:jslavuter@gmail.com" class="bio-link">jslavuter@gmail.com</a>

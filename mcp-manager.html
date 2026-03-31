@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MCP Manager — Jonathan Slavuter</title>
-  <meta name="description" content="Case study: Designing the governance layer for enterprise AI infrastructure. From zero conventions to acquisition.">
+  <meta name="description" content="Case study: Designing the governance layer for AI agent access at scale. From zero conventions to acquisition.">
   <link rel="stylesheet" href="style.css">
   <script>if(sessionStorage.getItem("js_auth")!=="1"){var r=encodeURIComponent(location.pathname.split("/").pop());location.replace("login.html?r="+r);}</script>
 </head>
@@ -27,117 +27,144 @@
   <div class="cs-at-a-glance">
     <div class="cs-stat">
       <p class="cs-stat-label">Role</p>
-      <p class="cs-stat-value">Staff Designer (IC) · Sole designer</p>
+      <p class="cs-stat-value">Staff Designer, sole designer</p>
     </div>
     <div class="cs-stat">
       <p class="cs-stat-label">Problem</p>
-      <p class="cs-stat-value">No tools for governing AI agent access at the org level</p>
+      <p class="cs-stat-value">Organizations had no clear way to govern AI agent access to tools and servers at scale</p>
     </div>
     <div class="cs-stat">
       <p class="cs-stat-label">Approach</p>
-      <p class="cs-stat-value">First-principles design, internal validation, alpha customer program, rapid iteration</p>
+      <p class="cs-stat-value">First-principles product design, internal validation, alpha customer feedback, rapid iteration</p>
     </div>
     <div class="cs-stat">
       <p class="cs-stat-label">Outcome</p>
-      <p class="cs-stat-value">Acquired by Usercentrics (Jan 2026); in active use across a growing customer base</p>
+      <p class="cs-stat-value">Led design from early concept to acquisition by Usercentrics in January 2026; product is now in active use and continuing to evolve within a larger platform</p>
     </div>
   </div>
 </div>
 
 <div class="cs-section">
   <div class="cs-section-inner">
-    <p class="cs-section-label">The situation</p>
-    <h2 class="cs-h2">A new category of problem, no existing playbook, a market moving fast.</h2>
-    <p class="cs-p">In early 2025, as MCP was emerging as an industry standard, Visor pivoted to build what organizations would actually need: governance infrastructure for AI agent access at scale. The question wasn't how to use MCP; it was how to manage it when dozens of teams need secure, auditable access to dozens of servers. I designed the product from scratch, leveraging the existing Visor design system as a foundation to move fast without starting over.</p>
-    <p class="cs-p">The challenge wasn't technical. It was trust. Who approved this connection? Which teams can reach which servers? What happens when an agent acts unexpectedly? I designed for two users who want opposite things: administrators who need full visibility and control, and developers who need MCP Manager to be invisible. That tension shaped every major decision.</p>
-    <p class="cs-p">I was the sole designer working without established conventions, in a fast-moving market where competitors were emerging in real time. No comparable tool to benchmark against, no mature research to draw from. Validation came from internal dogfooding, rapid iteration, and direct access to early customers through a formal alpha program.</p>
+    <p class="cs-section-label">Overview</p>
+    <h2 class="cs-h2">Not how to use MCP — how to manage it across an organization.</h2>
+    <p class="cs-p">In early 2025, as MCP emerged as a new standard, Visor pivoted to a more pressing problem: not how to use MCP, but how to manage it across an organization.</p>
+    <p class="cs-p">Once multiple teams, servers, and agents are involved, the challenge becomes governance. Who approved a connection? Which teams can access which servers? What happens when an agent behaves unexpectedly?</p>
+    <p class="cs-p">I designed MCP Manager from scratch to answer those questions. The product had to work for two groups with very different needs: administrators who need visibility and control, and developers who want the system to disappear into the background.</p>
+    <p class="cs-p">There was no clear playbook for this category. No mature research base, few comparable products, and a fast-moving market. Validation came through internal dogfooding, rapid iteration, and direct feedback from early customers in a formal alpha program.</p>
   </div>
 </div>
 
 <div class="cs-section">
   <div class="cs-section-inner">
-    <p class="cs-section-label">The Work</p>
-    <h2 class="cs-h2">Designing the mental model</h2>
+    <p class="cs-section-label">The Challenge</p>
+    <h2 class="cs-h2">Making an invisible system understandable.</h2>
+    <p class="cs-p">The hardest part was not technical complexity — it was making an invisible system understandable.</p>
+    <p class="cs-p">MCP infrastructure is abstract. Servers, gateways, agents, permissions, and policies all interact in ways that are difficult to see from the surface. Before users could configure anything confidently, they needed a clear mental model of how the system worked.</p>
+    <p class="cs-p">That shaped the product from the start. The first job was to make the structure legible.</p>
+  </div>
+</div>
 
-    <h3 class="cs-h3">Information architecture: making the invisible legible</h3>
-    <p class="cs-p">The first design challenge was conceptual, not visual. MCP infrastructure is abstract: servers, gateways, agents, connections, policies. These relationships are opaque for most users. The product's first job was to make them visible and understandable before a user ever touches a configuration screen.</p>
+<div class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-section-label">What I Designed</p>
+    <h2 class="cs-h2">A system people could understand, navigate, and trust.</h2>
 
-    <h3 class="cs-h3">Welcome screen: concept, not yet shipped</h3>
-    <p class="cs-p">The first screen a new user sees shouldn't be a settings page. It should be a map. The Welcome screen concept shows how the system works before asking anyone to configure it: AI apps on the left, gateways in the middle routing access, MCP servers on the right, users anchored below. Build the mental model first. Then everything else makes sense.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Welcome screen — entity relationship diagram (concept)</span></div>
+    <h3 class="cs-h3">A system people could understand</h3>
+    <p class="cs-p">I defined the core product model around the main entities in the system:</p>
+    <ul class="cs-ul">
+      <li>Gateways as the orchestration layer between AI applications and MCP servers</li>
+      <li>Servers as the systems exposing capabilities</li>
+      <li>Apps and Agents as the consumers of those capabilities</li>
+      <li>People, Policies, and Logs as the governance layer around them</li>
+    </ul>
+    <p class="cs-p">This structure gave administrators a way to reason about the system without forcing developers into unnecessary complexity.</p>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Welcome screen — entity relationship diagram</span></div>
 
-    <h3 class="cs-h3">Navigation: four layers of concern</h3>
-    <p class="cs-p">The sidebar IA reflects the two-user model across four layers: a Welcome onboarding area above the main nav; the action layer (Reporting, Alerts); the infrastructure layer (MCP Servers, Gateways, Apps & Agents); the governance layer (People, Policies, Logs); and the account layer. This keeps the surfaces developers care about at the top and the controls administrators depend on directly below, without requiring separate interfaces for each role.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Phase 1 nav — sidebar IA, four-layer structure</span></div>
+    <h3 class="cs-h3">Information architecture built around two user needs</h3>
+    <p class="cs-p">The navigation reflected the tension between speed and control. I organized the product into four layers:</p>
+    <ul class="cs-ul">
+      <li>Onboarding and orientation</li>
+      <li>Action surfaces like Reporting and Alerts</li>
+      <li>Infrastructure surfaces like MCP Servers, Gateways, and Apps and Agents</li>
+      <li>Governance surfaces like People, Policies, and Logs</li>
+    </ul>
+    <p class="cs-p">This made the product easier to navigate without splitting it into separate admin and developer experiences.</p>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Sidebar IA — four-layer structure</span></div>
 
-    <h3 class="cs-h3">The gateway model: one prompt, many servers</h3>
-    <p class="cs-p">The most important thing a gateway enables isn't architectural; it's experiential. A developer sends a single prompt, and the response can draw from multiple MCP servers simultaneously. Jira and Salesforce and Notion in a single answer, without the developer configuring each connection individually or knowing which servers were involved. From their perspective, it just works.</p>
-    <p class="cs-p">A gateway acts as the orchestration layer between AI applications and MCP servers. An AI app connects once, and through that single connection accesses every server assigned to it. The configuration burden that would otherwise fall on every individual developer is handled once, at the gateway level, by the administrator.</p>
-
-    <h3 class="cs-h3">Local connections: one tunnel, one active server</h3>
-    <p class="cs-p">Local MCP servers require tunnels to connect. To keep this manageable, a grouping construct ties a tunnel to a user's machine rather than to a specific server. At any given moment, one MCP server is active through it, reducing what would otherwise be an unmanageable number of connections to display and configure in the UI.</p>
-
+    <h3 class="cs-h3">A clearer model for gateways</h3>
+    <p class="cs-p">One of the most important product decisions was how to represent gateways.</p>
+    <p class="cs-p">A gateway is valuable because it makes complexity disappear for developers. An app connects once and can then access multiple MCP servers through a single layer of orchestration. The developer does not need to configure every connection individually or even know which systems were involved.</p>
+    <p class="cs-p">That meant the UI had to communicate two truths at once: administrators need to understand and control this layer, and developers should barely have to think about it.</p>
     <div class="screen-placeholder"><span class="screen-placeholder-label">MCP Servers — empty state</span></div>
     <div class="screen-placeholder"><span class="screen-placeholder-label">MCP Servers — populated list</span></div>
+
+    <h3 class="cs-h3">A workable model for local connections</h3>
+    <p class="cs-p">Local MCP servers require tunnels, which can easily become messy in the UI.</p>
+    <p class="cs-p">To simplify this, I introduced a grouping construct that ties a tunnel to a user's machine rather than a specific server. Only one MCP server is active through that connection at a time. This reduced a potentially unmanageable set of states into something users could actually understand and configure.</p>
   </div>
 </div>
 
 <div class="cs-section">
   <div class="cs-section-inner">
-    <p class="cs-section-label">The System</p>
+    <p class="cs-section-label">Design System and Product Evolution</p>
     <h2 class="cs-h2">Extending an existing design system to cover new territory.</h2>
-    <p class="cs-p">MCP Manager was built on top of the existing Visor component library, a deliberate decision that accelerated delivery significantly. Rather than starting a design system from scratch, we extended the existing token and component architecture to cover MCP-specific UI patterns.</p>
+    <p class="cs-p">MCP Manager was built on top of the existing Visor component library. That let us move quickly without rebuilding the system from scratch.</p>
+    <p class="cs-p">I extended the existing token and component architecture to support new MCP-specific patterns as the product matured.</p>
 
-    <h3 class="cs-h3">Brand direction: AI-assisted concepting</h3>
-    <p class="cs-p">Visual brand exploration for MCP Manager was done using v0, my first foray into AI-assisted design. I used it to generate and pressure-test directions quickly, then brought the strongest concepts into Figma to finish the detail work. The resulting colors and typography are intentionally distinct from Visor and have been defined in the Tokens file. They haven't been applied to the product yet; velocity has taken priority, but the direction is set.</p>
+    <h3 class="cs-h3">Component work that unlocked product capability</h3>
+    <p class="cs-p">A good example is the annotation chip system.</p>
+    <p class="cs-p">Tool annotations needed to communicate three distinct states: known true, known false, and unknown. This was not just a visual distinction. Each state changed how an administrator would interpret a tool's behavior and risk.</p>
+    <p class="cs-p">That same work later supported a more advanced condition builder. What began as simple attribute matching evolved into annotation-aware governance, where admins could create rules like "allow tools where Destructive is false" instead of relying only on name-based matching. This shifted the product from basic filtering toward semantic governance.</p>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Annotation chips — three-state system (known true, known false, unknown)</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Condition builder — Phase 1 (attribute-based)</span></div>
+    <div class="screen-placeholder"><span class="screen-placeholder-label">Condition builder — Phase 3 (annotation-aware)</span></div>
+
+    <h3 class="cs-h3">Navigation patterns for a growing product</h3>
+    <p class="cs-p">As the configuration model became deeper, I introduced a breadcrumb and page-header pattern to support gateway-scoped views and deeper admin workflows. That pattern became the standard navigation model for more complex configuration paths.</p>
     <div class="screen-placeholder"><span class="screen-placeholder-label">Design system — Components overview</span></div>
-
-    <h3 class="cs-h3">Component evolution: annotation chips</h3>
-    <p class="cs-p">Tool annotation chips (communicating properties like Read-only, Destructive, Idempotent, Open world) needed to represent three distinct epistemic states: known-true (solid filled chip), known-false (light background fill), and unknown (dashed outline + ? icon). This isn't a visual tweak; it's a meaningful semantic extension. Each state carries different implications for how an administrator interprets a tool's behavior and risk profile.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Annotation chips — three-state system (known-true, known-false, unknown)</span></div>
-
-    <h3 class="cs-h3">Component evolution: breadcrumb navigation</h3>
-    <p class="cs-p">As the product grew to support gateway-scoped views of MCP servers, a new global navigation pattern emerged. The breadcrumb + page header block became the standard wayfinding system for administrators navigating deep configuration hierarchies.</p>
   </div>
 </div>
 
 <div class="cs-section">
   <div class="cs-section-inner">
-    <p class="cs-section-label">Evolution</p>
-    <h2 class="cs-h2">From Phase 1 to Phase 3: how the product grew</h2>
+    <p class="cs-section-label">How the Product Evolved</p>
+    <h2 class="cs-h2">Four phases in under a year.</h2>
+    <p class="cs-p">The product changed quickly as the category became clearer.</p>
     <ul class="cs-ul">
-      <li><strong>Phase 1 (Sept 2025):</strong> Initial designs. Core IA, MCP Servers, Gateways, Apps & Agents, Users, Logs.</li>
-      <li><strong>Phase 2 (Sept 2025):</strong> Sitemap × Roles. Visual design updates, Reporting and Alerts, permissions model, role-based access controls.</li>
-      <li><strong>Phase 3 (Feb 2026):</strong> Managed. Added support for managed server type. Regex and Microsoft Presidio-based data rules replaced the earlier Policies model.</li>
-      <li><strong>Phase 4 (Feb 2026, in progress):</strong> Workstations. New workstation server type. Design concepts for annotations-based tool provisioning.</li>
+      <li><strong>Phase 1, September 2025:</strong> Established the core information architecture across MCP Servers, Gateways, Apps and Agents, Users, and Logs</li>
+      <li><strong>Phase 2, September 2025:</strong> Expanded the model with Reporting, Alerts, permissions, and role-based access controls</li>
+      <li><strong>Phase 3, February 2026:</strong> Added managed server support and replaced the earlier Policies model with regex and Microsoft Presidio-based data rules</li>
+      <li><strong>Phase 4, February 2026 to present:</strong> Added workstation server concepts and new directions for annotation-based tool provisioning</li>
     </ul>
-
-    <h3 class="cs-h3">The clearest example of evolution: condition building</h3>
-    <p class="cs-p">The annotation chip system and the condition builder aren't two separate workstreams. They're the same work. The component evolution made the product capability possible, and the product capability is what gives the component its meaning.</p>
-    <p class="cs-p">Phase 1 condition building was attribute-based. The 'Add to list of conditions' popover offered three matching criteria: Tool name, Tool title, Tool description, functioning as a security gate. If an attribute didn't match a defined condition, the tool wasn't provisioned.</p>
-    <p class="cs-p">Phase 3 condition building is annotation-aware. The same popover now exposes the full annotation model: for each annotation type, an administrator can match any state, or target specifically true, false, or unknown. A rule like 'allow tools where Destructive is false' is categorically different from 'allow tools named X': it's semantic governance rather than label matching.</p>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Condition builder — Phase 1 (attribute-based)</span></div>
-    <div class="screen-placeholder"><span class="screen-placeholder-label">Condition builder — Phase 3 (annotation-aware: true/false/unknown)</span></div>
+    <p class="cs-p">A representative example is the condition builder. In Phase 1, conditions were mostly attribute-based and acted as a simple provisioning gate. By Phase 3, the same workflow supported annotation-aware matching, letting administrators govern tool access based on semantic risk signals instead of labels alone.</p>
+    <p class="cs-p">That evolution shows how the product matured from a basic management layer into a more expressive governance system.</p>
   </div>
 </div>
 
 <div class="cs-section">
   <div class="cs-section-inner">
     <p class="cs-section-label">Outcome</p>
-    <h2 class="cs-h2">Acquisition and what comes next</h2>
-    <p class="cs-p">MCP Manager was acquired by Usercentrics in January 2026. The founding team integrated into a larger platform organization, and I continue as Staff Designer, now responsible for design operations and team integration in addition to the core product work.</p>
-    <p class="cs-p">The work is ongoing. The MCP ecosystem is still young, conventions are still forming, and the product will evolve as customers surface friction we haven't yet encountered.</p>
-    <p class="cs-p">Current focus: integrating MCP Manager operations with Usercentrics Legal and Sales teams, collaborating with PM on an MCPM pilot across Usercentrics, conducting competitive analysis, and designing an AI platform and MCP server registry for the next phase of the product.</p>
+    <h2 class="cs-h2">Acquired by Usercentrics. Still evolving.</h2>
+    <p class="cs-p">MCP Manager was acquired by Usercentrics in January 2026. I continued with the product as Staff Designer, expanding my role to include design operations and team integration alongside core product work.</p>
+    <p class="cs-p">The work is still ongoing. The MCP ecosystem is young, conventions are still forming, and the product continues to evolve as customer needs become clearer.</p>
+    <p class="cs-p">Current work includes:</p>
+    <ul class="cs-ul">
+      <li>Integrating MCP Manager with broader Usercentrics workflows</li>
+      <li>Supporting pilots across the organization</li>
+      <li>Conducting competitive analysis</li>
+      <li>Designing the next phase of the platform, including an AI platform and MCP server registry</li>
+    </ul>
   </div>
 </div>
 
 <div class="cs-next">
   <div>
     <p class="cs-next-label">Also see</p>
-    <h2 class="cs-next-title">Visor</h2>
+    <h2 class="cs-next-title">Visor: View Orientation</h2>
   </div>
   <div>
-    <p class="cs-next-desc">A self-initiated design intervention (the View Orientation Bar) that began as a simple grounding affordance and ended with a new app architecture and a 4× improvement on activation metrics.</p>
+    <p class="cs-next-desc">A self-initiated product redesign that started as a simple orientation layer and grew into a broader shift in product structure and navigation. 4x increase in sign-up conversion and workspace invitations.</p>
     <a href="visor.html" class="cs-next-link">Read Visor case study →</a>
   </div>
 </div>
